@@ -1,0 +1,108 @@
+{
+    "Projects":[
+        {"id":"0",
+            "title": "CONEC.T", 
+            "subtitle":"A Rede Social de Tecnologia", 
+            "description":"O Projeto tem o objetivo de reunir programadores e clientes que querem públicar assuntos e ideias de seus interesses, através de uma rede social.", 
+            "principalImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/main/src/assets/img/projects/conect/conect.png", 
+            "secondaryImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/main/src/assets/img/projects/conect/change_account.png", 
+            "data": "Jul/2019",
+            "designer": "Jefferson Carvalho",
+            "linkSite": "",
+            "github": "https://github.com/myjefferson/CONEC.T-RedeSocial", 
+            "techs": "HTML - CSS - JavaScript - PHP - SQL - Bootstrap - Materialize",
+            "Topics": [
+                {
+                    "layout": "principal",
+                    "title": "Conta para clientes",
+                    "text": "Na conta cliente Será possível apresentar demandas para os programadores desenvolver, compartilhar assuntos relacionados a tecnologia, conversar por chat e contratar um profissional para uma possível carreira promissora.",
+                    "img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/main/src/assets/img/projects/conect/home_client.png"
+                },
+                {
+                    "layout": "principal",
+                    "title": "Conta para desenvolvedores",
+                    "text": "Aqui será possível mostrar os projetos desenvolvidos, realizar demandas propostas por cliente, vender seus projetos na loja CONEC.T STORE e conversar pelo chat. ",
+                    "img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/main/src/assets/img/projects/conect/home_dev.png"
+                }
+            ]
+        },
+
+        {"id":"1",
+            "title": "NETFLIX - Concept", 
+            "subtitle":"Construção conceito da Netflix (Estudos)", 
+            "description":"Este projeto foi desenvolvido para fins de estudos em programação, design UX e UI. O sistema tem como funcionalidade um conceito simples de um sistema alternativo da Netflix, Web e Mobile.", 
+            "principalImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/main/src/assets/img/projects/netflix-concept/netflix-concept.png", 
+            "secondaryImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/main/src/assets/img/projects/netflix-concept/home.png",
+            "data": "Out/2020",
+            "designer": "Jefferson Carvalho",
+            "linkSite": "https://myjefferson.github.io/NETFLIX-MyPersonalProject/",
+            "github": "https://github.com/myjefferson/NETFLIX-MyPersonalProject",
+            "techs": "HTML - CSS - JavaScript",
+            "Topics": [
+                {
+                    "layout": "principal",
+                    "title": "Usabilidade básica",
+                    "text": "Nas telas principais é apresentado os filmes e séries no lado direito, e informações sobre os conteúdos no lado esquerdo.",
+                    "img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/main/src/assets/img/projects/netflix-concept/img1.png"
+                }
+            ]},
+
+        {"id":"2",
+            "title": "Cadastro de Filmes e Séries", 
+            "subtitle":"Cadastramento de filmes", 
+            "description":"Sistema que cadastra séries e filmes, armazenando as informações salvas no banco de dados.", 
+            "principalImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/main/src/assets/img/projects/cadastro-filmes/cadastro-filmes.png", 
+            "secondaryImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/main/src/assets/img/projects/cadastro-filmes/screens.png", 
+            "data": "Abr/2019",
+            "designer": "Jefferson Carvalho",
+            "linkSite": "",
+            "github": "https://github.com/myjefferson/cadastro-filmes-series.git", 
+            "techs": "C#",
+            "Topics": [{ "layout": "","title": "","text": "", "img": "" }]
+        },
+            
+
+        {"id":"3",
+            "title": "MEDIFARMA", 
+            "subtitle":"Gerenciamento de Pacientes e Médicos", 
+            "description":"Este projeto foi desenvolvido através do Hackaton de Programação realizado pelo Sistema FIEP por meio do SENAI (unidade Portão - Curitiba - PR). O objetivo principal da construção do programa foi em provar os participantes sobre os conhecimentos na linguagem de programação C#.", 
+            "principalImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/main/src/assets/img/projects/medifarma/medifarma.png", 
+            "secondaryImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/main/src/assets/img/projects/medifarma/change_account.png", 
+            "designer": "Jefferson Carvalho",
+            "linkSite": "",
+            "github": "", 
+            "techs": "C#",
+            "Topics": [
+                {
+                    "layout": "child",
+                    "title": "USUÁRIO E ADMINISTRADOR",
+                    "text": "Essas serão duas contas com funcionalidades diferentes. No usuário será disponível usos básicos, enquanto o administrador terá todos os comandos.",
+                    "img": ""
+                },
+                {
+                    "layout": "principal",
+                    "title": "Conta usuário",
+                    "text": "O funcionário que usar a conta usuário, terá acessos necessários para o gerenciamento dos pacientes e consultas.",
+                    "img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/main/src/assets/img/projects/medifarma/account_user.png"
+                },
+                {
+                    "layout": "child",
+                    "title": "OPÇÔES DO USUÁRIO",
+                    "text": "Buscar paciente, agendar consulta médica, registro de consultas.",
+                    "img": ""
+                },
+                {
+                    "layout": "principal",
+                    "title": "Conta administrador",
+                    "text": "O administrador tem acessos a todo o sistema, sendo possível também alterar os dados da conta usuário.",
+                    "img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/main/src/assets/img/projects/medifarma/account_admin.png"
+                },
+                {
+                    "layout": "child",
+                    "title": "OPÇÔES DO ADMINISTRADOR",
+                    "text": "Na conta é possível: Buscar paciente, cadastrar usuário e ler um arquivo XML de convênios.",
+                    "img": ""
+                }
+            ]}
+    ]
+} 
