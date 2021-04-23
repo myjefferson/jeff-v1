@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import logo from '../../../assets/img/bgPrincipal.png'
 
 export const Nav = styled.div`
-    margin: 30px 0 0 0;
+    padding: 30px 0 0 0;
     position: relative;
     z-index: 1;
 
@@ -19,7 +19,8 @@ export const Nav = styled.div`
         list-style: none;
     }
 
-    ul li a{
+    ul li #link-nav{
+        cursor: pointer;
         margin: 0 15px 0 15px;
         font-size: 17px;
         font-family: "GothamRounded";
@@ -28,7 +29,7 @@ export const Nav = styled.div`
         text-decoration: none;
     }
 
-    ul li a:hover {
+    ul li #link-nav:hover {
         background: #BF98FF;
         color: #121928;
         border-radius: 4px;
@@ -152,9 +153,10 @@ export const Initial = styled.div`
 `
 
 export const About = styled.div`
+    padding: 25px 0 0 0;
     display: flex;
     justify-content: center;  
-    margin: 6% 0 20% 0;  
+    margin: 6% 0 15% 0;  
 
     p{
         display: flex;
@@ -165,6 +167,7 @@ export const About = styled.div`
 `
 
 export const Projects = styled.div`
+    padding: 25px 0 0 0;
     color: #FFF;
     font-family: "GothamRounded"
 
@@ -193,6 +196,7 @@ export const Projects = styled.div`
     }
 
     #project img{
+        cursor: pointer;
         border-radius: 8px;
         width: 100%;
     }
@@ -253,6 +257,7 @@ export const Projects = styled.div`
 `
 
 export const Contact = styled.div`
+    padding: 25px 0 0 0;
     margin: 13% 0 13% 0;
 
     p{
@@ -347,6 +352,15 @@ export const Footer = styled.div`
 
     ul li img:hover{
         opacity: 100%;
+    }
+
+    p{
+        margin: 3px 0 0 0;
+    }
+
+    #img-reactjs{
+        vertical-align: bottom;
+        width: 17px;
     }
 `
 
