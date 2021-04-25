@@ -2,41 +2,8 @@ import {makeStyles} from '@material-ui/core'
 import styled from 'styled-components'
 import logo from '../../../assets/img/bgPrincipal.png'
 
-export const Nav = styled.div`
-    padding: 30px 0 0 0;
-    position: relative;
-    z-index: 1;
-
-    #logo{
-        margin: 5px 0 0 0;
-        width: 39px;
-    }
-
-    ul{
-        display: inline-flex;
-        color: #FFF;
-        float: right;
-        list-style: none;
-    }
-
-    ul li #link-nav{
-        cursor: pointer;
-        margin: 0 15px 0 15px;
-        font-size: 17px;
-        font-family: "GothamRounded";
-        padding: 5px 7px 5px 7px;
-        color: #fff;
-        text-decoration: none;
-    }
-
-    ul li #link-nav:hover {
-        background: #BF98FF;
-        color: #121928;
-        border-radius: 4px;
-    }
-`
-
 export const Initial = styled.div` 
+    padding: 90px 0 0 0;
     font-family: "GothamRounded";
     position: relative;
     height: 100vh;
@@ -49,8 +16,8 @@ export const Initial = styled.div`
     }
 
     ul li{
-        margin: 0 15px 0 0;
-        display: inline;
+        margin: 0 20px 0 0;
+        float: left;
         list-style: none;
     }
 
@@ -58,7 +25,7 @@ export const Initial = styled.div`
         opacity: 70%;
         vertical-align: bottom;
         border-radius: 6px;
-        width: 45px;
+        width: 47px;
     }
     
     ul li img:hover{
@@ -100,19 +67,24 @@ export const Initial = styled.div`
 
     p#profes{
         margin: 10px 0 70px 0;
-        font-size: 30.2px;
+        font-size: 25.1px;
         color: #ddd;
     }
 
-    button{
+    div#box-resume{
+        margin: 0;
+        display: flex;
+    }
+
+    #resume{
         background: none;
         cursor: pointer;
         padding: 0;
+        height: 44.5px;
         position: relative;
         width: 180px;
-        height: 45px;
         text-align: center;
-        line-height: 47px;
+        line-height: 44.5px;
         font-size: 17px;
         border-radius: 6px;
         border: 2px solid #999;
@@ -121,19 +93,20 @@ export const Initial = styled.div`
         transition: .0s;
       }
       
-      button:hover div#border{
+      #resume:hover div#border{
         position: absolute;
         width: 100%;
         height: 100%;
         opacity: 1;  
         transition: .6s;
+        border-radius: 6px;
         border-right: 2px solid #BF98FF;
         border-top: 2px solid #BF98FF;
         border-bottom: 2px solid #BF98FF;
       }
       
-      button:hover{
-        background: rgba(0,0,0,0.1);
+      #resume:hover{
+        background: #2C233A;
         transition-delay: 0.5s, 0.2s;
         color: #fff;
         border-left: 2px solid #BF98FF;
@@ -143,12 +116,12 @@ export const Initial = styled.div`
         transform: matrix(1, 0, 0, 1, 0.5, -1);
         position: absolute;
         width: 0%;
-        border-left: 0;
         height: 100%;
+        top: 0;
         right: 0;
         transition: .4s;
         border-radius: 6px;
-        border-left: 0px solid #fff;
+        border-left: 0;
       }
 `
 
@@ -156,13 +129,40 @@ export const About = styled.div`
     padding: 25px 0 0 0;
     display: flex;
     justify-content: center;  
+    aling-itens: center;
     margin: 6% 0 15% 0;  
 
     p{
-        display: flex;
+        color: #BBB;
         text-align: justify;
-        font-size: 24px;
-        width: 600px;
+        font-size: 20px;
+        width: 70vw;
+    }
+
+    #p-here-skills{
+        margin: 40px 0 10px 0;
+        color: #FFF;
+    }
+
+    ul{
+        margin: 40px 0 0 -42px;
+        list-style: none;
+    }
+
+    ul li{
+        margin: 0 20px 0 0;
+        float: left;
+        width: 50px;
+    }
+
+    ul li img{
+        width: 45px;
+    }
+
+    ul li p{
+        text-align: center;
+        font-size: 12.2px;
+        width: 100%;
     }
 `
 
@@ -193,6 +193,11 @@ export const Projects = styled.div`
 
     #project p{
         margin: 0;
+    }
+
+    #project a{
+        text-decoration: none;
+        color: #BBB;
     }
 
     #project img{
@@ -261,8 +266,9 @@ export const Contact = styled.div`
     margin: 13% 0 13% 0;
 
     p{
+        color: #BBB;
         padding: 0 160px 0 160px;
-        font-size: 24px;
+        font-size: 22px;
         text-align: center;
     }
 
@@ -302,7 +308,7 @@ export const Contact = styled.div`
     }
       
     a#email:hover{
-        background: rgba(0,0,0,0.1);
+        background: #2C233A;
         transition-delay: 0.5s, 0.2s;
         color: #fff;
         border-left: 2px solid #BF98FF;
@@ -391,14 +397,5 @@ export const HomeStyles = makeStyles({
     title: {
         color: "#BF98FF",
         textAlign: "center"
-    },
-})
-
-export const NavStyles = makeStyles({
-
-    listNav: {
-        margin: "10px",
-        textDecoration: "none",
-        color: "#FFF"
     },
 })

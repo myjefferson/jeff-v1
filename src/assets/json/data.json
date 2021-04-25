@@ -9,6 +9,7 @@
             "data": "Jul/2019",
             "designer": "Jefferson Carvalho",
             "linkSite": "",
+            "btnStatus": "btnOff",
             "github": "https://github.com/myjefferson/CONEC.T-RedeSocial", 
             "techs": "HTML - CSS - JavaScript - PHP - SQL - Bootstrap - Materialize",
             "Topics": [
@@ -36,6 +37,7 @@
             "data": "Out/2020",
             "designer": "Jefferson Carvalho",
             "linkSite": "https://myjefferson.github.io/NETFLIX-MyPersonalProject/",
+            "btnStatus": "btnOn",
             "github": "https://github.com/myjefferson/NETFLIX-MyPersonalProject",
             "techs": "HTML - CSS - JavaScript",
             "Topics": [
@@ -56,6 +58,7 @@
             "data": "Abr/2019",
             "designer": "Jefferson Carvalho",
             "linkSite": "",
+            "btnStatus": "btnOff",
             "github": "https://github.com/myjefferson/cadastro-filmes-series.git", 
             "techs": "C#",
             "Topics": [{ "layout": "","title": "","text": "", "img": "" }]
@@ -70,6 +73,7 @@
             "secondaryImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/medifarma/change_account.png", 
             "designer": "Jefferson Carvalho",
             "linkSite": "",
+            "btnStatus": "btnOff",
             "github": "", 
             "techs": "C#",
             "Topics": [
