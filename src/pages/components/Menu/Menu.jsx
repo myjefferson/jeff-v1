@@ -7,11 +7,36 @@ import { Container } from '@material-ui/core'
 export default function Menu(){
 
     var bol = false;
-    window.addEventListener("wheel", function(event){
+    var lastScrollTop = 0;
+
+    window.addEventListener("scroll", function(){
+        var st = window.pageYOffset || document.documentElement.scrollTop
+
         var nav = document.getElementById('initial')
         var position = this.scrollY
 
-        if(event.deltaY < 0){ //scrollup
+        if(st > lastScrollTop){
+            console.log(position)
+            if(position <= 95){
+                nav.style.boxShadow = "none"
+                nav.style.background = "none"
+                nav.style.margin = "0"
+            }else{
+                if(bol == false){
+                    nav.animate([
+                        {margin: '0'},
+                        {margin: '-100px 0 0 0'},
+                    ],{
+                        duration: 300,
+                    })
+                }
+                bol = true;  
+                nav.style.margin = "-100px 0 0 0"
+                nav.style.height = "50px"
+                nav.style.boxShadow = "none"
+                nav.style.position = "fixed"
+            }
+        }else{ //scrollup
             if(position <= 95){
                 nav.style.boxShadow = "none"
                 nav.style.background = "none"
@@ -35,43 +60,65 @@ export default function Menu(){
                 nav.style.background = "rgba(17, 24, 39,0.95)"
                 nav.style.transition = "0.5s"
             }
-        }else if(event.deltaY > 0){ //scrolldown
-            console.log("scroll down")
-            console.log(position)
-            if(position <= 95){
-                nav.style.boxShadow = "none"
-                nav.style.background = "none"
-                nav.style.margin = "0"
-            }else{
-                if(bol == false){
-                    nav.animate([
-                        {margin: '0'},
-                        {margin: '-100px 0 0 0'},
-                    ],{
-                        duration: 300,
-                    })
-                }
-                bol = true;  
-                nav.style.margin = "-100px 0 0 0"
-                nav.style.height = "50px"
-                nav.style.boxShadow = "none"
-                nav.style.position = "fixed"
-            }
         }
-    })
+
+        lastScrollTop = st <= 0 ? 0: st
+    }, false)
+    
+
+    window.onload = function(){
+        document.getElementById('btn_menu').addEventListener("click", function(){
+            var x = document.getElementById("list")
+
+            document.querySelector(".link-nav1").addEventListener('click', function(){
+                x.className = "rightnav"
+                window.document.documentElement.style.overflowY = "scroll"
+                
+            })
+            document.querySelector(".link-nav2").addEventListener('click', function(){
+                x.className = "rightnav"
+                window.document.documentElement.style.overflowY = "scroll" 
+            })
+            document.querySelector(".link-nav3").addEventListener('click', function(){
+                x.className = "rightnav"
+                window.document.documentElement.style.overflowY = "scroll" 
+             
+            })
+            document.querySelector(".link-nav4").addEventListener('click', function(){
+                x.className = "rightnav"
+                window.document.documentElement.style.overflowY = "scroll" 
+  
+            })
+
+            if(x.className === "rightnav"){
+                document.getElementById('icon_menu').setAttribute("src", "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/close.svg")
+                window.document.documentElement.style.overflow = "hidden"
+                x.className += " menumobile"
+            }else{
+                document.getElementById('icon_menu').setAttribute("src", "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/menu.svg")
+                x.className = "rightnav"
+                window.document.documentElement.style.overflowY = "scroll"   
+            }
+        })
+    }
 
     return (
         <>
             <Nav id="initial">
-                <Container>
+                <Container id="container">
                     <img id="logo" alt="J" src={logo}/>
-                    
-                    <ul>
-                        <li><Link activeClass='active' id="link-nav" to="home" spy={true} smooth={true} duration={500}>Início</Link></li>
-                        <li><Link activeClass='active' id="link-nav" to="about" spy={true} smooth={true} duration={500}>Sobre Mim</Link></li>
-                        <li><Link activeClass="active" id="link-nav" to="all-projects" spy={true} smooth={true} duration={500}>Projetos</Link></li>
-                        <li><Link activeClass="active" id="link-nav" to="contact" spy={true} smooth={true} duration={550}>Contatos</Link></li>
-                    </ul>
+                    <button id="btn_menu"><img id="icon_menu" src="https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/menu.svg"/></button>
+                    <div id="group-menu">
+                        <div id="list" className="rightnav">
+                            <ul>
+                                <li><Link activeClass='active' className="link-nav1" id="link-nav" to="home" spy={true} smooth={true} duration={500}>Início</Link></li>
+                                <li><Link activeClass='active' className="link-nav2" id="link-nav" to="about" spy={true} smooth={true} duration={500}>Sobre Mim</Link></li>
+                                <li><Link activeClass='active' className="link-nav3" id="link-nav" to="all-projects" spy={true} smooth={true} duration={500}>Projetos</Link></li>
+                                <li><Link activeClass='active' className="link-nav4" id="link-nav" to="contact" spy={true} smooth={true} duration={550}>Contatos</Link></li>
+                            </ul>
+                        </div>
+                        <div id="menu-blur"></div>
+                    </div>
                 </Container>
             </Nav>
         </>

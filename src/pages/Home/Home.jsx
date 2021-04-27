@@ -25,15 +25,19 @@ export default function Home(){
                     
                     <Initial>
                         <div id="pres-principal">
-                            <p id="salut">Olá, meu nome é</p>
-                            <h1 id="name">Jefferson Carvalho.</h1>
-                            <p id="profes">Futuro Analista e Desenvolvedor de Sistemas.</p>
-                            <ul>
-                                <li><a href="https://www.linkedin.com/in/jefferson-carvalho" target="_blank"><img src={linkedin} /></a></li>
-                                <li><a href="https://github.com/myjefferson" target="_blank"><img src={github} /></a></li>
-                                <li><div id="box-resume"><a id="resume" href={resume} target="_blank"><div id="border"></div>Ver resumo</a></div></li>
-                            </ul>
-                            <img id="avatar" src={avatar}/>
+                            <div id="bx-avatar">
+                                <img id="avatar" src={avatar}/>
+                            </div>
+                            <div>
+                                <p id="salut">Olá, meu nome é</p>
+                                <h1 id="name">Jefferson Carvalho.</h1>
+                                <p id="profes">Futuro Analista e Desenvolvedor de Sistemas.</p>
+                                <ul>
+                                    <li><a href="https://www.linkedin.com/in/jefferson-carvalho" target="_blank"><img src={linkedin} /></a></li>
+                                    <li><a href="https://github.com/myjefferson" target="_blank"><img src={github} /></a></li>
+                                    <li><div id="box-resume"><a id="resume" href={resume} target="_blank"><div id="border"></div>Ver resumo</a></div></li>
+                                </ul>
+                            </div>
                         </div>
                     </Initial>
                 </div>
@@ -42,7 +46,7 @@ export default function Home(){
                     <div>
                         <h1 className={styleHome.title}>Sobre Mim</h1>
                         
-                        <p>Olá, muito prazer! Me chamo Jefferson, e uso minhas idéias e criatividade para desenvolver projetos para web. Comecei a estudar programação em 2014 criando projetos pessoais usando o HTML, CSS e JavaScript.</p>
+                        <p>Olá, muito prazer! Me chamo Jefferson, e uso minhas ideias e criatividade para desenvolver projetos para web. Comecei a estudar programação em 2014 criando projetos pessoais usando o HTML, CSS e JavaScript.</p>
                         <p>Atualmente estou estudando Análise e Desenvolvimento de Sistemas na Faculdade Anchieta de Ensino Superior do Paraná, na cidade de Curitiba/PR. Meu objetivo é ampliar o conhecimento em habilidades técnicas e gerenciais, sempre buscando a melhor forma de moldar minha vocação para entregar um excelente trabalho.</p>
                         
                         <p id="p-here-skills">Aqui estão algumas das minhas habilidades:</p>

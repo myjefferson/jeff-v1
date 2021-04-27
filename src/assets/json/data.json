@@ -16,7 +16,7 @@
                 {
                     "layout": "principal",
                     "title": "Conta para clientes",
-                    "text": "Na conta cliente Será possível apresentar demandas para os programadores desenvolver, compartilhar assuntos relacionados a tecnologia, conversar por chat e contratar um profissional para uma possível carreira promissora.",
+                    "text": "Na conta cliente, será possível apresentar demandas para os programadores desenvolver, compartilhar assuntos relacionados a tecnologia, conversar por chat e contratar um profissional para uma possível carreira promissora.",
                     "img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/conect/home_client.png"
                 },
                 {
@@ -71,6 +71,7 @@
             "description":"Este projeto foi desenvolvido através do Hackaton de Programação realizado pelo Sistema FIEP por meio do SENAI (unidade Portão - Curitiba - PR). O objetivo principal da construção do programa foi em provar os participantes sobre os conhecimentos na linguagem de programação C#.", 
             "principalImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/medifarma/medifarma.png", 
             "secondaryImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/medifarma/change_account.png", 
+            "data": "Set/2019",
             "designer": "Jefferson Carvalho",
             "linkSite": "",
             "btnStatus": "btnOff",

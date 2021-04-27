@@ -3,13 +3,13 @@ import styled from 'styled-components'
 import logo from '../../../assets/img/bgPrincipal.png'
 
 export const Initial = styled.div` 
-    padding: 90px 0 0 0;
+    padding: 45px 0 0 0;
     font-family: "GothamRounded";
     position: relative;
     height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    align-items: center;
 
     ul{
         padding: 0;
@@ -35,23 +35,15 @@ export const Initial = styled.div`
     #pres-principal{
         width: 100%;
         position: abolute;
-        top: 17%;
-        transform: translate(0, 17%);
     }
-
     #pres-principal img#avatar{
-        position: absolute;
-        right: 0;
-        top: 0%;
-        right: 10%;
-        transform: translate(-10%, 0%);
-        width: 300px;
+        margin: -15px 50px 0 0;
         float: right;
-        border-radius: 10px;
+        width: 23%;
+        border-radius: 8px;
         padding: 10px 10px 10px 10px;
-        border: 2.3px solid #BF98FF;
+        border: 2.4px solid #BF98FF;
     }
-
     p#salut{   
         font-size: 24px;
         margin: 0 0 8px 0;
@@ -67,7 +59,7 @@ export const Initial = styled.div`
 
     p#profes{
         margin: 10px 0 70px 0;
-        font-size: 25.1px;
+        font-size: 1.56em;
         color: #ddd;
     }
 
@@ -123,10 +115,79 @@ export const Initial = styled.div`
         border-radius: 6px;
         border-left: 0;
       }
+
+      @media only screen and (max-width: 900px) {
+        margin: -50px 0 0 0;
+
+        #resume{
+            height: 40px;
+            font-size: 15px;
+        }
+
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 0 0 0 10px;
+        }
+
+        ul li img{
+            border-radius: 6px;
+            width: 40px;
+        }
+
+        #pres-principal{
+            display: block;
+            grid-template-columns: none;
+            column-gap: none;
+            width: 100%;
+            position: abolute;
+        }
+
+        #pres-principal div#bx-avatar{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0 50px 0;
+        }
+
+        p#salut{   
+            text-align: center;
+            font-size: 24px;
+            margin: 0 0 8px 0;
+        }
+
+        h1#name{
+            width: 100%;
+            text-align: center;
+            font-family: "Gotham";
+            margin: 0;
+            font-size: 31px;
+            color: #BF98FF;
+        }
+
+        p#profes{
+            text-align: center;
+            margin: 10px 0 70px 0;
+            font-size: 1.1em;
+            color: #ddd;
+        }
+        #pres-principal img#avatar{
+            float: none;
+            top: 0;
+            left: 0;
+            width: 150px;
+            margin: 0;
+            border-radius: 7px;
+            padding: 9px 9px 9px 9px;
+            border: 2.4px solid #BF98FF;
+        }
+      }
 `
 
 export const About = styled.div`
-    padding: 25px 0 0 0;
+    padding: 80px 0 0 0;
     display: flex;
     justify-content: center;  
     aling-itens: center;
@@ -164,10 +225,29 @@ export const About = styled.div`
         font-size: 12.2px;
         width: 100%;
     }
+
+    @media only screen and (max-width: 900px) {
+        p{
+            color: #BBB;
+            text-align: justify;
+            font-size: 17px;
+            width: 100%;
+        }
+
+         ul{
+             display: flex;
+             justify-content: space-evenly;
+             text-align: center;
+         }
+
+         ul li{
+             margin: 0;
+         }
+    }
 `
 
 export const Projects = styled.div`
-    padding: 25px 0 0 0;
+    padding: 80px 0 0 0;
     color: #FFF;
     font-family: "GothamRounded"
 
@@ -259,10 +339,22 @@ export const Projects = styled.div`
         border-radius: 6px;
         border-left: 0px solid #fff;
     }
+
+    @media only screen and (max-width: 900px) {
+        div#project{
+            padding: 10px;
+            margin: 0 0 40px 0;
+        }
+
+        #projects{
+            display: block;
+            grid-template-columns: none;
+        }
+    }
 `
 
 export const Contact = styled.div`
-    padding: 25px 0 0 0;
+    padding: 80px 0 0 0;
     margin: 13% 0 13% 0;
 
     p{
@@ -325,48 +417,12 @@ export const Contact = styled.div`
         border-radius: 6px;
         border-left: 0px solid #fff;
     }
-`
 
-export const Footer = styled.div`
-    text-align: center;
-    color: #aaa;
-    margin: 10px 0 50px 0;
-
-    ul{
-        margin: 40px 0 40px 0;
-        padding: 0 0 0 15px;
-    }
-
-    img#logo{
-        width: 40px;
-        margin: 25px 0 25px 0;
-    }
-
-    ul li{
-        display: inline;
-        margin: 0 20px 0 0;
-        padding: 0;
-    }
-
-    ul li img{
-        opacity: 70%;
-        margin: 0;
-        padding:0;
-        width: 40px;
-        border-radius: 100px;
-    }
-
-    ul li img:hover{
-        opacity: 100%;
-    }
-
-    p{
-        margin: 3px 0 0 0;
-    }
-
-    #img-reactjs{
-        vertical-align: bottom;
-        width: 17px;
+    @media only screen and (max-width: 900px) {
+        p{
+            padding: 0;
+            width: 100%;
+        }
     }
 `
 

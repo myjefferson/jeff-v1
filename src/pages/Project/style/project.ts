@@ -134,11 +134,11 @@ export const Head = styled.div`
         border-left: 2px solid #BF98FF;
       }
 
-    #head #info_project .btnOn{
-          display: block;
+    #head .btnOn{
+        display: block;
     }
       
-    #head #basic_info .btnOff{
+    #head .btnOff{
         display: none;
     }
       
@@ -163,6 +163,29 @@ export const Head = styled.div`
     margin: 140px 0 0 0;
     }
 
+    @media only screen and (max-width: 900px) {
+        margin-top: 140px;
+
+        #head h1{
+            margin: 0 0 30px 0;
+            font-size: 30px;
+        }
+
+        #head h3, .principal h3{
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        #head #info_itens div{
+            display: block;
+            margin: 0 0 30px 0;
+        }
+
+        #head a{
+            margin: 10px 0 0 0;
+            width: 100%;
+        }
+    }
 `
 
 export const Body = styled.div`
@@ -189,5 +212,16 @@ export const Body = styled.div`
     #topicImg img{
         margin: 80px 0 0 0;
         width: 100%;   
+    }
+
+    @media only screen and (max-width: 900px) {
+        h1{
+            font-size: 24px;
+        }
+
+        h3{
+            font-size: 18px;
+            line-height: 1.4;
+        }
     }
 `
