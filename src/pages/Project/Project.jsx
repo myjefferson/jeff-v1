@@ -27,7 +27,7 @@ export default function Project(){
                 nav.style.boxShadow = "none"
                 nav.style.position = "absolute"
             }else{
-                if(bol == true){
+                if(bol === true){
                     nav.animate([
                         {margin: '-100px 0 0 0'},
                         {margin: '0 0 0 0'}
@@ -52,8 +52,8 @@ export default function Project(){
         <>
             <Nav id="nav-project" onScroll={scrollNav()}>
                 <Container>
-                    <a href="/#all-projects"><img id="logo" src={logo}/></a>
-                    <a id="back" href="/#all-projects"><img src={arrow}/>Voltar</a>
+                    <a href="/#all-projects"><img id="logo" src={logo} alt="Logo Jefferson Carvalho"/></a>
+                    <a id="back" href="/#all-projects"><img src={arrow} alt="<-"/>Voltar</a>
                 </Container>
             </Nav> {scrollNav}
             <Container>
@@ -81,7 +81,7 @@ export default function Project(){
                                                     <p>{data.designer}</p>  
                                                 </div>
                                             </div>
-                                            <a href={data.linkSite} className={data.btnStatus} target="_blank">
+                                            <a href={data.linkSite} className={data.btnStatus} target="_blank" rel="noreferrer">
                                                 <div id="border">
                                                 </div>
                                                 ABRIR SITE
@@ -103,7 +103,7 @@ export default function Project(){
                                                         <h1>{topic.title}</h1>
                                                         <h3>{topic.text}</h3>
                                                         <div id="topicImg">
-                                                            <img src={topic.img} />
+                                                            <img src={topic.img} alt=""/>
                                                         </div>
                                                     </div>  
                                                 </>

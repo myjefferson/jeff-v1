@@ -9,13 +9,13 @@ export default function Footer(){
     return(
         <>
             <StyleFooter>
-                <img id="logo" src={logo} />
+                <img id="logo" src={logo} alt="Logo Jefferson Carvalho"/>
                 <ul>
-                    <li><a href="https://github.com/myjefferson" target="_blank"><img src={github}/></a></li>
-                    <li><a href="https://www.linkedin.com/in/jefferson-carvalho" target="_blank"><img src={linkedin}/></a></li>
+                    <li><a href="https://github.com/myjefferson" rel="noreferrer" target="_blank"><img src={github} alt="GitHub"/></a></li>
+                    <li><a href="https://www.linkedin.com/in/jefferson-carvalho" rel="noreferrer" target="_blank"><img src={linkedin} alt="LinkedIn"/></a></li>
                 </ul>
                 <p>Desenvolvido com 💜 por Jefferson Carvalho</p>
-                <p>Usando ReactJS <img id="img-reactjs" src={reactjs}/></p>
+                <p>Usando ReactJS <img id="img-reactjs" src={reactjs} alt="ReactJS" /></p>
             </StyleFooter>
         </> 
     )
