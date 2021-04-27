@@ -73,21 +73,22 @@ export default function Menu(){
             document.querySelector(".link-nav1").addEventListener('click', function(){
                 x.className = "rightnav"
                 window.document.documentElement.style.overflowY = "scroll"
-                
+                document.getElementById('icon_menu').setAttribute("src", "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/menu.svg")
             })
             document.querySelector(".link-nav2").addEventListener('click', function(){
                 x.className = "rightnav"
                 window.document.documentElement.style.overflowY = "scroll" 
+                document.getElementById('icon_menu').setAttribute("src", "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/menu.svg")
             })
             document.querySelector(".link-nav3").addEventListener('click', function(){
                 x.className = "rightnav"
                 window.document.documentElement.style.overflowY = "scroll" 
-             
+                document.getElementById('icon_menu').setAttribute("src", "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/menu.svg")
             })
             document.querySelector(".link-nav4").addEventListener('click', function(){
                 x.className = "rightnav"
                 window.document.documentElement.style.overflowY = "scroll" 
-  
+                document.getElementById('icon_menu').setAttribute("src", "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/menu.svg")
             })
 
             if(x.className === "rightnav"){
