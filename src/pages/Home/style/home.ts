@@ -255,6 +255,12 @@ export const Projects = styled.div`
         font-family: "Gotham" 
     }
 
+    p#subtitle{
+        color: #BBB;
+        font-size: 22px;
+        text-align: center;
+    }
+
     #projects{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -340,7 +346,11 @@ export const Projects = styled.div`
         border-left: 0px solid #fff;
     }
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 900px){
+        p#subtitle{
+            font-size: 20px;
+        }
+
         div#project{
             padding: 10px;
             margin: 0 0 40px 0;
@@ -420,6 +430,7 @@ export const Contact = styled.div`
 
     @media only screen and (max-width: 900px) {
         p{
+            font-size: 20px;
             padding: 0;
             width: 100%;
         }

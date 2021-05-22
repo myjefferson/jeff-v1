@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyleFooter = styled.div`
     text-align: center;
-    color: #aaa;
+    color: #AAA;
     margin: 60px 0 50px 0;
 
     ul{
@@ -37,8 +37,24 @@ export const StyleFooter = styled.div`
         margin: 3px 0 0 0;
     }
 
-    #img-reactjs{
+    a{
+        text-decoration: none;
+        color: #AAA;
+    }
+
+    p a:hover{
+        color: #FFF;
+    }
+
+    #img-reactjs, #img-github{
+        border-radius: 100px;
         vertical-align: bottom;
         width: 17px;
+    }
+
+    @media only screen and (max-width: 900px) {
+        p{
+            font-size: 15px;
+        }
     }
 `

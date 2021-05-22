@@ -97,7 +97,8 @@ export const Head = styled.div`
         float: left;
     }
 
-    #head a{
+    #head a#openSite{
+        margin-top: 10px;
         background: none;
         cursor: pointer;
         padding: 0;
@@ -115,7 +116,7 @@ export const Head = styled.div`
         transition: .0s;
       }
       
-      #head a:hover div#border{
+      #head a#openSite:hover div#border{
         position: absolute;
         width: 100%;
         height: 100%;
@@ -127,11 +128,23 @@ export const Head = styled.div`
         border-bottom: 2px solid #BF98FF;
       }
       
-      #head a:hover{
+      #head a#openSite:hover{
         background: #2C233A;
         transition-delay: 0.5s, 0.2s;
         color: #fff;
         border-left: 2px solid #BF98FF;
+      }
+
+      #head #github img{
+          opacity: 0.6;
+          width: 40px;
+          border-radius: 100px;
+      }
+
+      #head #github img:hover{
+        opacity: 1;
+        width: 40px;
+        border-radius: 100px;
       }
 
     #head .btnOn{
@@ -163,7 +176,7 @@ export const Head = styled.div`
     margin: 140px 0 0 0;
     }
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 850px) {
         margin-top: 140px;
 
         #head h1{
@@ -181,7 +194,7 @@ export const Head = styled.div`
             margin: 0 0 30px 0;
         }
 
-        #head a{
+        #head a#openSite{
             margin: 10px 0 0 0;
             width: 100%;
         }

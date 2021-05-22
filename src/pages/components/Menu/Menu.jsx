@@ -16,13 +16,12 @@ export default function Menu(){
         var position = this.scrollY
 
         if(st > lastScrollTop){
-            console.log(position)
             if(position <= 95){
                 nav.style.boxShadow = "none"
                 nav.style.background = "none"
                 nav.style.margin = "0"
             }else{
-                if(bol == false){
+                if(bol === false){
                     nav.animate([
                         {margin: '0'},
                         {margin: '-100px 0 0 0'},
@@ -42,8 +41,7 @@ export default function Menu(){
                 nav.style.background = "none"
                 nav.style.padding = "30px 0 0 0"
             }else{
-                console.log("scroll up")
-                if(bol == true){
+                if(bol === true){
                     nav.animate([
                         {margin: '-100px 0 0 0'},
                         {margin: '0 0 0 0'}
@@ -108,7 +106,7 @@ export default function Menu(){
             <Nav id="initial">
                 <Container id="container">
                     <img id="logo" alt="J" src={logo}/>
-                    <button id="btn_menu"><img id="icon_menu" src="https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/menu.svg"/></button>
+                    <button id="btn_menu"><img id="icon_menu" src="https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/menu.svg" alt="Logo J"/></button>
                     <div id="group-menu">
                         <div id="list" className="rightnav">
                             <ul>

@@ -3,6 +3,7 @@ import project from '../../assets/json/data.json'
 import {Container} from '@material-ui/core'
 
 import logo from '../../assets/img/logo-jefferson-carvalho.svg'
+import github from '../../assets/img/github.svg'
 import arrow from '../../assets/img/arrow.svg'
 import {Nav, Head, Body} from './style/project'
 import Footer from '../components/Footer/Footer'
@@ -80,8 +81,11 @@ export default function Project(){
                                                     <h4>DESIGNER</h4>
                                                     <p>{data.designer}</p>  
                                                 </div>
+                                                <div id="github">
+                                                    <a href={data.github} target="_blank" rel="noreferrer"><img src={github} alt=""/></a>
+                                                </div>
                                             </div>
-                                            <a href={data.linkSite} className={data.btnStatus} target="_blank" rel="noreferrer">
+                                            <a id="openSite" href={data.linkSite} className={data.btnStatus} target="_blank" rel="noreferrer">
                                                 <div id="border">
                                                 </div>
                                                 ABRIR SITE
@@ -103,7 +107,7 @@ export default function Project(){
                                                         <h1>{topic.title}</h1>
                                                         <h3>{topic.text}</h3>
                                                         <div id="topicImg">
-                                                            <img src={topic.img} alt=""/>
+                                                            <img src={topic.img} alt={topic.title}/>
                                                         </div>
                                                     </div>  
                                                 </>
