@@ -1,9 +1,9 @@
 import React from 'react'
-import logo from '../../../assets/img/logo-jefferson-carvalho.svg'
-import linkedin from '../../../assets/img/linkedin.svg'
-import github from '../../../assets/img/github.svg'
+import logo from '../../assets/img/logo-jefferson-carvalho.svg'
+import linkedin from '../../assets/img/linkedin.svg'
+import github from '../../assets/img/github.svg'
 import {StyleFooter} from './style/footer'
-import reactjs from '../../../assets/img/reactjs.svg'
+import reactjs from '../../assets/img/reactjs.svg'
 
 export default function Footer(){
     return(

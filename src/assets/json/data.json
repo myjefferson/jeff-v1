@@ -92,7 +92,7 @@
                 },
                 {
                     "layout": "child",
-                    "title": "OPÇÔES DO USUÁRIO",
+                    "title": "OPÇÕES DO USUÁRIO",
                     "text": "Buscar paciente, agendar consulta médica, registro de consultas.",
                     "img": ""
                 },
@@ -104,9 +104,9 @@
                 },
                 {
                     "layout": "child",
-                    "title": "OPÇÔES DO ADMINISTRADOR",
+                    "title": "OPÇÕES DO ADMINISTRADOR",
                     "text": "Na conta é possível: Buscar paciente, cadastrar usuário e ler um arquivo XML de convênios.",
-                    "img": ""
+                    "img": "https://raw.githubusercontent.com/myjefferson/Medifarma-Hackaton/master/Medifarma%20-%20Program/imagens/t6.png"
                 }
             ]}
     ]

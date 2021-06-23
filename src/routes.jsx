@@ -1,15 +1,19 @@
 import React from 'react'
-import {Link, HashRouter, Route, BrowserRouter} from 'react-router-dom'
+import {Route, BrowserRouter, Switch} from 'react-router-dom'
 
-import Home from './pages/Home/Home'
-import Project from './pages/Project/Project'
+import Home from './components/Home/Home'
+import Project from './components/Project/Project'
+import Erro from './components/Erro404/Erro' 
 
 export default function Routes(){
     return (
-        <>
+        <>  
             <BrowserRouter>
-                <Route path="/" exact component={Home}/>
-                <Route path="/Project" component={Project}/>
+                <Switch>
+                    <Route path="/" exact component={Home}/>
+                    <Route path="/Project/:id" component={Project}/>
+                    <Route path="*" component={Erro}/>
+                </Switch>
             </BrowserRouter>
         </>
     )

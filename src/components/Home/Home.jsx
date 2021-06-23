@@ -11,8 +11,8 @@ import linkedin from '../../assets/img/linkedin.svg'
 import github from '../../assets/img/github.svg'
 import resume from '../../assets/doc/JeffersonCarvalho.pdf'
 
-import Menu from '../components/Menu/Menu'
-import Footer from '../components/Footer/Footer'
+import Menu from '../Menu/Menu'
+import Footer from '../Footer/Footer'
 
 export default function Home(){
     const styleHome = HomeStyles()
@@ -20,7 +20,7 @@ export default function Home(){
     return (
         <>
             <div className={styleHome.bgPrincipal}/>
-            <Container maxWidth="lg" className={styleHome.container} id="home">             
+            <Container maxWidth="lg"className={styleHome.container} id="home" >             
                 <div className={styleHome.hScreen}>
                     <Menu/>
                     
@@ -83,13 +83,15 @@ export default function Home(){
                 <Projects id="all-projects">
                     <Fade bottom>
                         <h1 className={styleHome.title}>Projetos Recentes</h1>
-                        <p id="subtitle">Aqui estão meus projetos desenvolvidos recentemente. Fique à vontade para ver ideias criadas por amigos e clientes!</p>
+                        <p id="subtitle">
+                            Aqui estão meus projetos desenvolvidos recentemente. Fique à vontade para ver ideias criadas por amigos e clientes!
+                        </p>
                         <div id="projects">
-                            {projects.Projects.map((data, key) => {
+                            {projects.Projects.map((data) => {
                                 return(
-                                    <div id="project" key={key}>
-                                        <a href={`/Project?id=${data.id}`}>
-                                            <img src={data.principalImg} alt=""/>
+                                    <div id="project" key={data.id}>
+                                        <a href={`/Project/${data.id}`}>
+                                            <img src={data.principalImg} alt={data.title}/>
                                             <h1>{data.title}</h1>
                                             <p>{data.subtitle}</p>
                                         </a>
@@ -106,7 +108,10 @@ export default function Home(){
                 <Contact id="contact">
                     <Fade bottom>
                         <h1 className={styleHome.title}>Entre em Contato</h1>
-                        <p>No momento, estou no processo de aprendizagem estagiando como desenvolvedor <i>front-end</i>. Se precisar fazer alguma pergunta, estarei a disposição para responder você.</p>
+                        <p>
+                            Estou a procura de uma oportunidade para trabalhar como desenvolvedor front-end. Estarei a disposição para responder.
+                            {/*No momento, estou no processo de aprendizagem estagiando como desenvolvedor <i>front-end</i>. Se precisar fazer alguma pergunta, estarei a disposição para responder você.*/}
+                        </p>
                         <div id="box-more">
                             <a id="email" href="mailto:jcsjeffrey@gmail.com"><div id="border"></div>Dizer Olá</a>
                         </div>
