@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import logo from '../../assets/img/logo-jefferson-carvalho.svg'
 import {Nav} from './style/menu'
 import {Link} from 'react-scroll'

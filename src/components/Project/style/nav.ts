@@ -5,6 +5,7 @@ export const NavStyle = styled.div`
         box-shadow: 0px 2px 20px rgba(0,0,0,0.4);
         background: rgba(17, 24, 39,0.95);
         position: fixed;
+        z-index:100;
         top: 0;
         left: 0;
         padding: 10px 0 10px 0;
