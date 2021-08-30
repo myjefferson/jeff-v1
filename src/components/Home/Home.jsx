@@ -28,7 +28,7 @@ export default function Home(){
                         <div id="pres-principal">
                             <Fade top delay={100}>
                                 <div id="bx-avatar">
-                                    <img id="avatar" src={avatar} alt="Jefferson Carvalho"/>
+                                    <img id="avatar" src={avatar} alt="Jefferson Carvalho" title="Jefferson Carvalho"/>
                                 </div>
                             </Fade>
                             <div>
@@ -43,8 +43,8 @@ export default function Home(){
                                 </Fade>
                                 <Fade bottom delay={1050} duration={700}>
                                     <ul>
-                                        <li><a href="https://www.linkedin.com/in/jefferson-carvalho" rel="noreferrer" target="_blank"><img src={linkedin} alt="LinkedIn" /></a></li>
-                                        <li><a href="https://github.com/myjefferson" target="_blank" rel="noreferrer"><img src={github} alt="GitHub"/></a></li>
+                                        <li><a href="https://www.linkedin.com/in/jefferson-carvalho" rel="noreferrer" target="_blank" title="Acessar o LinkedIn"><img src={linkedin} alt="LinkedIn" /></a></li>
+                                        <li><a href="https://github.com/myjefferson" rel="noreferrer" target="_blank" title="Acessar o GitHub"><img src={github} alt="GitHub"/></a></li>
                                         <li><div id="box-resume"><a id="resume" href={resume} target="_blank" rel="noreferrer"><div id="border"></div>Ver resumo</a></div></li>
                                     </ul>
                                 </Fade>

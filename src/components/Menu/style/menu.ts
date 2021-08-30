@@ -1,13 +1,18 @@
 import styled from 'styled-components'
 
 export const Nav = styled.div`
-    padding: 30px 0 0 0;
+    display: -webkit-box;
+    -webkit-align-items: end;
+    -webkit-box-align: end;
+    
+    padding: 0;
     position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
+    height: 75px;
     width: 100vw;
-    transition: 1s;
+    transition: 0.24s;
 
     /*Animation Nav Scrolling*/
     .scrollTop, .scrollUp, .scrollDown{
@@ -18,22 +23,26 @@ export const Nav = styled.div`
     }
 
     .scrollTop{
-        top: 0px;
-        margin-top: 35px;
-        height: 50px;
+        display: -webkit-box;
+        -webkit-align-items: end;
+        -webkit-box-align: end;
+        
+        top: 0;
+        height: 75px;
         box-shadow: none;
-        transition: 0.3s;
-        animation-duration: 0.5s;
+        transition: 0.24s;
+        animation-duration: 0.24s;
         animation-name: ScrollTop;
+        backdrop-filter: blur(0);
     }
 
     @keyframes ScrollTop{
         from{
-            margin-top: 0;
+            top: 0;
             background: rgba(17, 24, 39,0.95);
             box-shadow: 0px 2px 20px rgba(0,0,0,0.4);
         }to{
-            margin-top: 35px;
+            top: 0;
             background: none;
             box-shadow: none;
         }
@@ -45,7 +54,7 @@ export const Nav = styled.div`
         padding: 10px 0 10px 0;
         background: rgba(17, 24, 39,0.90);
         box-shadow: 0px 2px 20px rgba(0,0,0,0.4);
-        animation-duration: 0.5s;
+        animation-duration: 0.24s;
         animation-name: ScrollUp;
     }
 
@@ -60,10 +69,10 @@ export const Nav = styled.div`
     .scrollDown{
         width: 100vw;
         position: fixed;
-        top: -100px;
+        top: -50px;
         left: 0;
-        transition: 1s;
-        animation-duration: 0.7s;
+        transition: 0.24s;
+        animation-duration: 0.4s;
         animation-name: ScrollDown;
         background: rgba(17, 24, 39,0.95);
         box-shadow: 0px 2px 20px rgba(0,0,0,0.4);
@@ -76,6 +85,7 @@ export const Nav = styled.div`
 
     #container{
         position: relative;
+        width: 100vw;
     }
 
     #btn_menu{
@@ -90,7 +100,7 @@ export const Nav = styled.div`
     }
 
     #logo{
-        margin: 0 0 0 0;
+        margin: 0;
         width: 40px;
     }
 
@@ -126,7 +136,6 @@ export const Nav = styled.div`
         backdrop-filter: none;
 
         #list{
-            position: fixed;
             display flex;
         }
 
@@ -146,21 +155,16 @@ export const Nav = styled.div`
         }
         
         .menumobile #group-menu{
-            width: 100vw;
-            height: 100vh;
-            position: fixed;
-            top: 0 !important;
-            left: 0 !important;
-            margin: 0 !important;
             display: grid;
             grid-template-columns: 40% 60%;
         }
 
         .menumobile{
-            position: fixed;
-            margin: 0 !important;
-            top: 0 !important;
-            left: 0 !important;
+            position: fixed !important;
+            margin: 0;
+            top: 0;
+            left: 0;
+            padding:0;
             height: 100vh;
             width: 100vw;
             display: flex;
@@ -168,6 +172,11 @@ export const Nav = styled.div`
             justify-content: center;
             background: #1E2940;
         }
+
+        .scrollTop .menumobile{
+            top: 0;
+        }
+
 
         .menumobile ul{
             float: none;

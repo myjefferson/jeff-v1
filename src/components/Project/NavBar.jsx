@@ -12,8 +12,8 @@ export default function NavBar(){
             <NavStyle>
                 <div id="nav-bar">
                     <Container>
-                        <Link to="/"><img id="logo" src={logo} alt="Logo Jefferson Carvalho"/></Link>
-                        <Link id="back" to="/"><img src={arrow} alt="<-"/>Voltar</Link>
+                        <Link to="/"><img id="logo" src={logo} alt="Logo Jefferson Carvalho" title="Jefferson Carvalho"/></Link>
+                        <a id="back" href="/#all-projects"><img src={arrow} alt="<-"/>Voltar</a>
                     </Container>
                 </div>
             </NavStyle>  

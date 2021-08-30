@@ -7,45 +7,27 @@ import { Container } from '@material-ui/core'
 export default function Menu(){
 
     useEffect(() => {
-            var Nav = document.getElementById("navbar")
-            var bol = false;
-            var lastScrollTop = 0;
+        var Nav = document.getElementById("navbar")        
+        var prevScrollPos = window.pageYOffset; //posLoadlPage
+        window.addEventListener("scroll", function(){
+            var currentScrollPos = window.pageYOffset;
+            
+            if(currentScrollPos < 90){
+                Nav.classList.remove("scrollDown")
+                Nav.classList.remove("scrollUp")
+                Nav.classList.add("scrollTop")
+            }else if(prevScrollPos < currentScrollPos){ //scroll 0
+                Nav.classList.remove("scrollUp")
+                Nav.classList.remove("scrollTop")
+                Nav.classList.add("scrollDown")
+            }else if(currentScrollPos > 90){
+                Nav.classList.remove("scrollTop")
+                Nav.classList.remove("scrollDown")
+                Nav.classList.add("scrollUp");
+            }
+            prevScrollPos = currentScrollPos;
+        })
 
-            window.addEventListener("scroll", function(){
-                var st = window.pageYOffset || document.documentElement.scrollTop
-                var position = this.scrollY;
-                
-                if(st > lastScrollTop){
-                    if(position <= 95){
-                        Nav.classList.remove("scrollDown")
-                        Nav.classList.add("scrollTop");
-                    }else{
-                        if(bol === false){
-                            Nav.classList.remove("scrollUp")
-                        }
-                        bol = true;  
-                        Nav.classList.remove("scrollTop");
-                        Nav.classList.add("scrollDown")
-                    }
-                }else{ //scrollup
-                    if(position <= 95){
-                        Nav.classList.remove("scrollUp")
-                        Nav.classList.add("scrollTop");
-                    }else{
-                        if(bol === true){
-                            Nav.classList.remove("scrollUp")
-                        }
-                        bol = false;
-                        Nav.classList.add("scrollUp")
-                        Nav.classList.remove("scrollDown")
-                    }
-                }
-                lastScrollTop = st <= 0 ? 0: st
-            })
-      
-    },[])
-
-    window.onload = function(){
         document.getElementById('btn_menu').addEventListener("click", function(){
             var x = document.getElementById("list")
 
@@ -80,8 +62,8 @@ export default function Menu(){
                 window.document.documentElement.style.overflowY = "scroll"   
             }
         })
-    }
 
+    },[])
 
     return (
         <>

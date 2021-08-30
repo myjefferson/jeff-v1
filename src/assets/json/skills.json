@@ -4,6 +4,8 @@
         {"img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/skills/nodejs.svg", "name": "NodeJS"},
         {"img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/skills/javascript.svg", "name": "JavaScript"},
         {"img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/skills/php.svg", "name": "PHP"},
-        {"img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/skills/css.svg", "name": "CSS"}
+        {"img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/skills/css.svg", "name": "CSS"},
+        {"img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/skills/html5.svg", "name": "HTML5"},
+        {"img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/skills/vscode.svg", "name": "Visual Studio Code"}
     ]
 }
