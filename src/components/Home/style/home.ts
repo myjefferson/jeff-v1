@@ -205,22 +205,24 @@ export const About = styled.div`
         color: #FFF;
     }
 
-    ul{
+    ul.skills{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
         margin: 40px 0 0 -42px;
         list-style: none;
     }
 
-    ul li{
+    ul.skills li{
         margin: 0 20px 0 0;
         float: left;
         width: 50px;
     }
 
-    ul li img{
+    ul.skills li img{
         width: 45px;
     }
 
-    ul li p{
+    ul.skills li p{
         text-align: center;
         font-size: 12.2px;
         width: 100%;
@@ -234,15 +236,15 @@ export const About = styled.div`
             width: 100%;
         }
 
-         ul{
-             display: flex;
-             justify-content: space-evenly;
-             text-align: center;
-         }
+        ul.skills{
+            grid-template-columns: auto auto auto auto;
+            justify-content: space-evenly;
+            text-align: center;
+        }
 
-         ul li{
-             margin: 0;
-         }
+        ul.skills li{
+            margin: 0;
+        }
     }
 `
 

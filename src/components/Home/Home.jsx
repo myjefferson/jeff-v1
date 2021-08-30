@@ -64,12 +64,12 @@ export default function Home(){
                             <p id="p-here-skills">Aqui estão algumas das minhas habilidades:</p>
                         </Fade>
                         <Fade bottom>
-                            <ul>
+                            <ul class="skills">
                                 {skills.Skills.map((data, key) => {
                                     return(
                                         <>
                                             <li key={key}>
-                                                <p><img src={data.img} alt=""/></p>
+                                                <p><img src={data.img} alt="" title={data.title}/></p>
                                                 <p>{data.name}</p>
                                             </li>
                                         </>
