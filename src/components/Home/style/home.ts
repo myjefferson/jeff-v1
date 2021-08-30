@@ -205,24 +205,24 @@ export const About = styled.div`
         color: #FFF;
     }
 
-    ul.skills{
+    ul{
         display: grid;
         grid-template-columns: auto auto auto auto auto auto auto;
         margin: 40px 0 0 -42px;
         list-style: none;
     }
 
-    ul.skills li{
+    ul li{
         margin: 0 20px 0 0;
         float: left;
         width: 50px;
     }
 
-    ul.skills li img{
+    ul li img{
         width: 45px;
     }
 
-    ul.skills li p{
+    ul li p{
         text-align: center;
         font-size: 12.2px;
         width: 100%;
@@ -236,13 +236,13 @@ export const About = styled.div`
             width: 100%;
         }
 
-        ul.skills{
+        ul{
             grid-template-columns: auto auto auto auto;
             justify-content: space-evenly;
             text-align: center;
         }
 
-        ul.skills li{
+        ul li{
             margin: 0;
         }
     }
