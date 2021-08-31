@@ -7,10 +7,10 @@
         {"img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/skills/css.svg", "name": "CSS", "title": "CSS"},
         {"img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/skills/mysql.svg", "name": "MySQL", "title": "MySQL"},
         {"img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/skills/html5.svg", "name": "HTML5", "title": "HTML5"},
+        {"img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/skills/bootstrap.svg", "name": "Bootstrap", "title": "Boostrap"},
+        {"img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/skills/uikit.svg", "name": "UIKit", "title": "UIKit"},
         {"img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/skills/vscode.svg", "name": "VS Code", "title": "Visual Studio Code"},
         {"img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/skills/figma.svg", "name": "Figma", "title": "Figma"},
-        {"img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/skills/adobexd.svg", "name": "Adobe XD", "title": "Adobe XD"},
-        {"img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/skills/bootstrap.svg", "name": "Bootstrap", "title": "Boostrap"},
-        {"img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/skills/uikit.svg", "name": "UIKit", "title": "UIKit"}
+        {"img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/skills/adobexd.svg", "name": "Adobe XD", "title": "Adobe XD"}
     ]
 }

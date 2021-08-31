@@ -39,7 +39,7 @@ export default function Home(){
                                     <h1 id="name">Jefferson Carvalho.</h1>
                                 </Fade>
                                 <Fade bottom delay={850} duration={700}>
-                                    <p id="profes">Futuro Analista e Desenvolvedor de Sistemas.</p>
+                                    <p id="profes"><i>Futuro</i> <b>Analista e Desenvolvedor de Sistemas.</b></p>
                                 </Fade>
                                 <Fade bottom delay={1050} duration={700}>
                                     <ul>
