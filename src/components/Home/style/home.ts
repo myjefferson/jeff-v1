@@ -227,6 +227,12 @@ export const Initial = styled.div`
             border: 2.4px solid #BF98FF;
         }
       }
+      
+      @media only screen and (max-height: 640px){
+        .scroll-icon{
+            display: none;
+        }
+      }
 `
 
 export const About = styled.div`
