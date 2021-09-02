@@ -122,7 +122,7 @@ export const Initial = styled.div`
           display: flex;
           justify-content: center;
           left: 0;
-          bottom: 70px;
+          bottom: 70px !important;
           width: 100%;
       }
 
@@ -159,7 +159,7 @@ export const Initial = styled.div`
         margin: -50px 0 0 0;
 
         .scroll-icon{
-            bottom: 15px;
+            bottom: 15px !important;
         }
 
         #resume{
@@ -228,7 +228,7 @@ export const Initial = styled.div`
         }
       }
       
-      @media only screen and (max-height: 640px){
+      @media only screen and (max-height: 630px){
         .scroll-icon{
             display: none;
         }
