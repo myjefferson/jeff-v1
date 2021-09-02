@@ -157,7 +157,7 @@ export const Initial = styled.div`
       }
 
       @media only screen and (max-width: 900px) {
-        margin-top -50px;
+        margin-top -50px !important;
 
         .scroll-icon .mouse{
             margin-top: -60px !important;
