@@ -3,6 +3,11 @@ import styled from 'styled-components'
 import logo from '../../../assets/img/bgPrincipal.png'
 
 export const Initial = styled.div` 
+    env(safe-area-inset-top);
+    env(safe-area-inset-right);
+    env(safe-area-inset-bottom);
+    env(safe-area-inset-left);
+
     font-family: "GothamRounded";
     position: relative;
     height: 100vh;
@@ -49,7 +54,6 @@ export const Initial = styled.div`
     }
 
     h1#name{
-        color: ;
         font-family: "Gotham";
         margin: 0;
         font-size: 58px;
@@ -121,7 +125,7 @@ export const Initial = styled.div`
           display: flex;
           justify-content: center;
           left: 0;
-          bottom: 0;
+          bottom: 30px;
           width: 100%;
       }
 
@@ -134,7 +138,6 @@ export const Initial = styled.div`
           height: 30px;
           border: 2px solid #FFF;
           border-radius: 50px 50px 50px 50px;
-          margin-top: -110px !important;
       }
 
       .scroll-icon .mouse .pointer-mouse{
@@ -156,10 +159,9 @@ export const Initial = styled.div`
       }
 
       @media only screen and (max-width: 900px) {
-        .scroll-icon .mouse{
-            margin-top: -60px !important;
+        .scroll-icon{
+            bottom: 20px;
         }
-
 
         #resume{
             height: 40px;
