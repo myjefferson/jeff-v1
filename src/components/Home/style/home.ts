@@ -116,8 +116,51 @@ export const Initial = styled.div`
         border-left: 0;
       }
 
+      /*scroll*/
+      .scroll-icon{
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          left: 0;
+          bottom: 70px;
+          width: 100%;
+      }
+
+      .scroll-icon .mouse{
+          position relative;
+          display: flex;
+          justify-content: center;
+          padding: 5px;
+          width: 12px;
+          height: 30px;
+          border: 2px solid #FFF;
+          border-radius: 50px 50px 50px 50px;
+      }
+
+      .scroll-icon .mouse .pointer-mouse{
+            display: block;
+            width: 4px;
+            height: 8px;
+            border-radius: 2px;
+            background: white;
+            margin-top: 20px;
+            animation: pointerAnima 1.3s infinite alternate;
+      }
+
+      @keyframes pointerAnima{
+          from{
+            margin-top: 10px;
+          }to{
+            margin-top: 0px;
+          }
+      }
+
       @media only screen and (max-width: 900px) {
         margin: -50px 0 0 0;
+
+        .scroll-icon{
+            bottom: 15px;
+        }
 
         #resume{
             height: 40px;

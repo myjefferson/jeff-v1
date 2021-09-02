@@ -10,6 +10,7 @@ import avatar from '../../assets/img/avatar.png'
 import linkedin from '../../assets/img/linkedin.svg'
 import github from '../../assets/img/github.svg'
 import resume from '../../assets/doc/JeffersonCarvalho.pdf'
+import scrollAnim from '../../assets/img/mouse-scroll.gif'
 
 import Menu from '../Menu/Menu'
 import Footer from '../Footer/Footer'
@@ -48,6 +49,12 @@ export default function Home(){
                                         <li><div id="box-resume"><a id="resume" href={resume} target="_blank" rel="noreferrer"><div id="border"></div>Ver resumo</a></div></li>
                                     </ul>
                                 </Fade>
+                                <div class="scroll-icon">
+                                    {/*<img src={scrollAnim}/>*/}
+                                    <div class="mouse">
+                                        <div class="pointer-mouse"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </Initial>
