@@ -10,7 +10,6 @@ import avatar from '../../assets/img/avatar.png'
 import linkedin from '../../assets/img/linkedin.svg'
 import github from '../../assets/img/github.svg'
 import resume from '../../assets/doc/JeffersonCarvalho.pdf'
-import scrollAnim from '../../assets/img/mouse-scroll.gif'
 
 import Menu from '../Menu/Menu'
 import Footer from '../Footer/Footer'
@@ -50,8 +49,7 @@ export default function Home(){
                                     </ul>
                                 </Fade>
                                 <div class="scroll-icon">
-                                    {/*<img src={scrollAnim}/>*/}
-                                    <div class="mouse">
+                                    <div class="mouse" title="Utilize o Scroll do mouse para me conhecer mais!">
                                         <div class="pointer-mouse"></div>
                                     </div>
                                 </div>

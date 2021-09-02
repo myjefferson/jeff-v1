@@ -149,9 +149,9 @@ export const Initial = styled.div`
 
       @keyframes pointerAnima{
           from{
-            margin-top: 10px;
-          }to{
             margin-top: 0px;
+          }to{
+            margin-top: 10px;
           }
       }
 
