@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import logo from '../../../assets/img/bgPrincipal.png'
 
 export const Initial = styled.div` 
-    padding: 45px 0 0 0;
     font-family: "GothamRounded";
     position: relative;
     height: 100vh;
@@ -157,8 +156,6 @@ export const Initial = styled.div`
       }
 
       @media only screen and (max-width: 900px) {
-        padding: 0 0 0 0 !important;
-
         .scroll-icon .mouse{
             margin-top: -60px !important;
         }
