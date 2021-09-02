@@ -116,13 +116,13 @@ export const Initial = styled.div`
         border-left: 0;
       }
 
-      /*scroll*/
+      /*scroll icon animations*/
       .scroll-icon{
           position: absolute;
           display: flex;
           justify-content: center;
           left: 0;
-          bottom: 70px !important;
+          bottom: 0;
           width: 100%;
       }
 
@@ -135,6 +135,7 @@ export const Initial = styled.div`
           height: 30px;
           border: 2px solid #FFF;
           border-radius: 50px 50px 50px 50px;
+          margin-top: -110px !important;
       }
 
       .scroll-icon .mouse .pointer-mouse{
@@ -156,11 +157,12 @@ export const Initial = styled.div`
       }
 
       @media only screen and (max-width: 900px) {
-        margin: -50px 0 0 0;
+        margin-top -50px;
 
-        .scroll-icon{
-            bottom: 15px !important;
+        .scroll-icon .mouse{
+            margin-top: -60px !important;
         }
+
 
         #resume{
             height: 40px;
