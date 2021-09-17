@@ -1,17 +1,13 @@
 import styled from 'styled-components'
 
 export const Nav = styled.div`
-    display: -webkit-box;
-    -webkit-align-items: end;
-    -webkit-box-align: end;
-    
-    padding: 0;
-    position: fixed;
+    padding: 20px 0 0 0;
     z-index: 1;
     left: 0;
     top: 0;
+    position: absolute;
     height: 75px;
-    width: 100vw;
+    width: 100%;
     transition: 0.24s;
 
     /*Animation Nav Scrolling*/
@@ -19,7 +15,7 @@ export const Nav = styled.div`
         position: fixed;
         backdrop-filter: blur(3px);
         -webkit-backdrop-filter: blur(3px);
-        width: 100vw;
+        width: 100%;
     }
 
     .scrollTop{
@@ -67,7 +63,7 @@ export const Nav = styled.div`
     }
 
     .scrollDown{
-        width: 100vw;
+        width: 100%;
         position: fixed;
         top: -50px;
         left: 0;

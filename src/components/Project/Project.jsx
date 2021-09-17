@@ -50,7 +50,7 @@ export default function Project(){
                                                 <a id="openSite" href={data.linkSite} className={data.btnStatus} target="_blank" rel="noreferrer">
                                                     <div id="border">
                                                     </div>
-                                                    ABRIR SITE
+                                                    VER PROJETO
                                                 </a>
                                             </div>
 

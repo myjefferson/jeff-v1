@@ -95,11 +95,13 @@ export default function Home(){
                             {projects.Projects.map((data) => {
                                 return(
                                     <div id="project" key={data.id}>
-                                        <a href={`/Project/${data.id}`}>
-                                            <img src={data.principalImg} alt={data.title}/>
-                                            <h1>{data.title}</h1>
-                                            <p>{data.subtitle}</p>
-                                        </a>
+                                        <img src={data.principalImg} alt={data.title}/>
+                                        <div class="options-open-project">
+                                            <a href={data.github}>Abrir no GitHub</a>
+                                            <a href={`/Project/${data.id}`}>Mais detalhes</a>
+                                        </div>
+                                        <h1>{data.title}</h1>
+                                        <p>{data.subtitle}</p>
                                     </div>
                                 )         
                             })}

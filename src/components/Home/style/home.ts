@@ -339,9 +339,32 @@ export const Projects = styled.div`
     }
 
     #project img{
-        cursor: pointer;
         border-radius: 8px;
         width: 100%;
+    }
+
+    #project .options-open-project{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        display: grid;
+        padding: 0px 0 0px 0px;
+        margin-top: -51px;
+        border-radius: 0 0 7px 7px;
+        background: #061224;
+        grid-template-columns: auto auto;
+    }
+
+    #project .options-open-project a{
+        margin: 17px 30px 17px 30px;
+        padding: 7px 0 7px 0;
+        background: #BF98FF;
+        color: #061224;
+        border-radius: 3px;
+    }
+
+    #project .options-open-project a:hover{
+        background: rgba(255,255,255,.8);
     }
 
     div#box-more{
