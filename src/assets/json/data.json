@@ -32,8 +32,8 @@
             "title": "NETFLIX - Concept", 
             "subtitle":"Construção conceito da Netflix (Estudos)", 
             "description":"Este projeto foi desenvolvido para fins de estudos em programação, design UX e UI. O sistema tem como funcionalidade um conceito simples de um sistema alternativo da Netflix, Web e Mobile.", 
-            "principalImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/netflix-concept/netflix-concept.png", 
-            "secondaryImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/netflix-concept/home.png",
+            "principalImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/netflix-concept/netflix-concept.jpg", 
+            "secondaryImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/netflix-concept/home.jpg",
             "data": "Out/2020",
             "designer": "Jefferson Carvalho",
             "linkSite": "https://myjefferson.github.io/NETFLIX-MyPersonalProject/",
@@ -45,7 +45,7 @@
                     "layout": "principal",
                     "title": "Usabilidade básica",
                     "text": "Nas telas principais é apresentado os filmes e séries no lado direito, e informações sobre os conteúdos no lado esquerdo.",
-                    "img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/netflix-concept/img1.png"
+                    "img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/netflix-concept/img1.jpg"
                 }
             ]},
 

@@ -1,6 +1,6 @@
 import {makeStyles} from '@material-ui/core'
 import styled from 'styled-components'
-import logo from '../../../assets/img/bgPrincipal.png'
+import logo from '../../../assets/img/bgPrincipal.jpg'
 
 export const Initial = styled.div` 
     env(safe-area-inset-top);
