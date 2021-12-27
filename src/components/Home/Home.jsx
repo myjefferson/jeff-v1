@@ -118,8 +118,8 @@ export default function Home(){
                     <Fade bottom>
                         <h1 className={styleHome.title}>Entre em Contato</h1>
                         <p>
-                            {/*Estou a procura de uma oportunidade para trabalhar como desenvolvedor front-end. Estarei a disposição para responder.*/}
-                            No momento, estou em um processo de aprendizagem estagiando como desenvolvedor <i>front-end</i>. Se precisar fazer alguma pergunta, estarei a disposição para responder você.
+                            Estou a procura de uma oportunidade para trabalhar como desenvolvedor front-end. Estarei a disposição para responder.
+                            {/*No momento, estou em um processo de aprendizagem estagiando como desenvolvedor <i>front-end</i>. Se precisar fazer alguma pergunta, estarei a disposição para responder você.*/}
                         </p>
                         <div id="box-more">
                             <a id="email" href="mailto:jcsjeffrey@gmail.com"><div id="border"></div>Dizer Olá</a>

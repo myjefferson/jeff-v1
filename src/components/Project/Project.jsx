@@ -69,7 +69,11 @@ export default function Project(){
                                                             <h1>{topic.title}</h1>
                                                             <h3>{topic.text}</h3>
                                                             <div id="topicImg">
-                                                                <img src={topic.img} alt={topic.title}/>
+                                                                {
+                                                                    topic.img === "" 
+                                                                    ? <p></p>
+                                                                    : <img src={topic.img} alt={topic.title}/>
+                                                                }
                                                             </div>
                                                         </div>  
                                                     </>
