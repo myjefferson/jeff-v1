@@ -25,46 +25,22 @@
 
         {"id":"2",
             "title": "Home Cloud", 
-            "subtitle":"Gerenciamento de Pacientes e Médicos", 
-            "description":"Este projeto foi desenvolvido através do Hackaton de Programação realizado pelo Sistema FIEP por meio do SENAI (unidade Portão - Curitiba - PR). O objetivo principal da construção do programa foi em provar os participantes sobre os conhecimentos na linguagem de programação C#.", 
-            "principalImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/medifarma/medifarma.png", 
-            "secondaryImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/medifarma/change_account.png", 
-            "data": "Set/2019",
+            "subtitle": "Sua 'núvem' em casa...", 
+            "description":"Home Cloud é um sistema web voltado para pessoas que desejam fazer um armazenamento de arquivos de 'núvem' em casa.", 
+            "principalImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/home-cloud/home-cloud.png", 
+            "secondaryImg": "https://github.com/myjefferson/home-cloud/raw/master/frontend/src/assets/screens/screen-1.png", 
+            "data": "Dez/2021",
             "designer": "Jefferson Carvalho",
             "linkSite": "",
             "btnStatus": "btnOff",
-            "github": "https://github.com/myjefferson/Medifarma-Hackaton", 
-            "techs": "C#",
+            "github": "https://github.com/myjefferson/home-cloud", 
+            "techs": "ReactJS - React Native - NodeJS - MySQL",
             "Topics": [
                 {
-                    "layout": "child",
-                    "title": "USUÁRIO E ADMINISTRADOR",
-                    "text": "Essas serão duas contas com funcionalidades diferentes. No usuário será disponível usos básicos, enquanto o administrador terá todos os comandos.",
-                    "img": ""
-                },
-                {
                     "layout": "principal",
-                    "title": "CONTA DO USUÁRIO",
-                    "text": "O funcionário que usar a conta usuário, terá acessos necessários para o gerenciamento dos pacientes e consultas.",
-                    "img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/medifarma/account_user.png"
-                },
-                {
-                    "layout": "child",
-                    "title": "Opções do Usuário",
-                    "text": "Buscar paciente, agendar consulta médica, registro de consultas.",
-                    "img": ""
-                },
-                {
-                    "layout": "principal",
-                    "title": "CONTA DO ADMINISTRADOR",
-                    "text": "O administrador tem acessos a todo o sistema, sendo possível também alterar os dados da conta usuário.",
-                    "img": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/medifarma/account_admin.png"
-                },
-                {
-                    "layout": "child",
-                    "title": "Opções do administrador",
-                    "text": "Na conta é possível: Buscar paciente, cadastrar usuário e ler um arquivo XML de convênios.",
-                    "img": "https://raw.githubusercontent.com/myjefferson/Medifarma-Hackaton/master/Medifarma%20-%20Program/imagens/t6.png"
+                    "title": "Sobre o projeto",
+                    "text": "Inspirado nos serviços de armazenamento e sincronização de arquivos como o Google Driver. O sistema web Home Cloud pode facilitar o compartilhamento de arquivos através da mesma rede local. É possível fazer upload dos arquivos, remover, criar pastas e, no decorrer do desenvolvimento, poderá chegar novas ações.",
+                    "img": "https://github.com/myjefferson/home-cloud/raw/master/frontend/src/assets/screens/screen-4.png"
                 }
             ]
         },
@@ -100,8 +76,8 @@
 
 
         {"id":"4",
-            "title": "NETFLIX - Concept", 
-            "subtitle":"Construção conceito da Netflix (Estudos)", 
+            "title": "NETFLIX", 
+            "subtitle":"Um layout alternativo", 
             "description":"Este projeto foi desenvolvido para fins de estudos em programação, design UX e UI. O sistema tem como funcionalidade um conceito simples de um sistema alternativo da Netflix, Web e Mobile.", 
             "principalImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/netflix-concept/netflix-concept.jpg", 
             "secondaryImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/netflix-concept/home.jpg",
@@ -123,8 +99,8 @@
 
 
         {"id":"5",
-            "title": "Cadastro de Filmes e Séries", 
-            "subtitle":"Cadastramento de filmes", 
+            "title": "Editor NETFLIX", 
+            "subtitle":"Cadastre Filmes e Séries", 
             "description":"Sistema que cadastra séries e filmes, armazenando as informações salvas no banco de dados.", 
             "principalImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/cadastro-filmes/cadastro-filmes.png", 
             "secondaryImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/cadastro-filmes/screens.png", 
