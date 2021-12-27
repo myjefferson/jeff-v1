@@ -11,7 +11,7 @@
             "linkSite": "https://myjefferson.github.io/edity-me/",
             "btnStatus": "btnOn",
             "github": "https://github.com/myjefferson/edity-me", 
-            "techs": "HTML - CSS - JavaScript - jQuery - Bootstrap - HTML2Canvas - CropperJS",
+            "techs": "HTML - CSS - JavaScript | jQuery - Bootstrap - HTML2Canvas - CropperJS",
             "Topics": [
                 {
                     "layout": "principal",
@@ -57,7 +57,7 @@
             "linkSite": "http://conect.infinityfreeapp.com/index.php",
             "btnStatus": "btnOn",
             "github": "https://github.com/myjefferson/CONEC.T-RedeSocial", 
-            "techs": "HTML - CSS - JavaScript - PHP - SQL - Bootstrap - Materialize",
+            "techs": "HTML - CSS - JavaScript - PHP - MySQL | Bootstrap - Materialize - PHPMailer",
             "Topics": [
                 {
                     "layout": "principal",
