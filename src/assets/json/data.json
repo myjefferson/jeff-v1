@@ -26,7 +26,7 @@
         {"id":"2",
             "title": "Home Cloud", 
             "subtitle": "Sua 'núvem' em casa...", 
-            "description":"Home Cloud é um sistema web voltado para pessoas que desejam fazer um armazenamento de arquivos de 'núvem' em casa.", 
+            "description":"Home Cloud é um sistema web voltado para pessoas que desejam fazer um armazenamento de arquivos como uma 'núvem' em casa.", 
             "principalImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/home-cloud/home-cloud.png", 
             "secondaryImg": "https://github.com/myjefferson/home-cloud/raw/master/frontend/src/assets/screens/screen-1.png", 
             "data": "Dez/2021",

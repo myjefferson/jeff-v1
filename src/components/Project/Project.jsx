@@ -36,7 +36,7 @@ export default function Project(){
                                                         <p>{data.data}</p>
                                                     </div>
                                                     <div id="techs">
-                                                        <h4>LINGUAGENS</h4>
+                                                        <h4>TECNOLOGIAS</h4>
                                                         <p>{data.techs}</p>
                                                     </div>
                                                     <div id="designer">
