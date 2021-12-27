@@ -39,7 +39,7 @@
                 {
                     "layout": "principal",
                     "title": "Sobre o projeto",
-                    "text": "Inspirado nos serviços de armazenamento e sincronização de arquivos como o Google Driver. O sistema web Home Cloud pode facilitar o compartilhamento de arquivos através da mesma rede local. É possível fazer upload dos arquivos, remover, criar pastas e, no decorrer do desenvolvimento, poderá chegar novas ações.",
+                    "text": "Inspirado nos serviços de armazenamento e sincronização de arquivos como o Google Driver. O sistema web Home Cloud pode facilitar o compartilhamento de arquivos através da mesma rede local. É possível fazer upload dos arquivos, remover, criar pastas e, no decorrer do desenvolvimento, poderão chegar novas ações.",
                     "img": "https://github.com/myjefferson/home-cloud/raw/master/frontend/src/assets/screens/screen-4.png"
                 }
             ]
