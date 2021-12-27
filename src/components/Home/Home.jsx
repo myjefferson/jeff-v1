@@ -89,7 +89,7 @@ export default function Home(){
                     <Fade bottom>
                         <h1 className={styleHome.title}>Projetos Recentes</h1>
                         <p id="subtitle">
-                            Aqui estão meus projetos desenvolvidos recentemente. Fique à vontade para ver ideias criadas por amigos e clientes!
+                            Aqui serão apresentados meus projetos desenvolvidos recentemente. Fique à vontade!
                         </p>
                         <div id="projects">
                             {projects.Projects.map((data) => {

@@ -56,7 +56,14 @@ export default function Project(){
 
 
                                             <div id="secondaryImg">
-                                                <img src={data.secondaryImg} alt=""/>
+                                                {data.secondaryImg === ""
+                                                    ? <p style={{
+                                                        marginTop: "30px", 
+                                                        display: "block",
+                                                        height: "45px"
+                                                    }}></p>
+                                                    : <img src={data.secondaryImg} alt=""/>
+                                                }
                                             </div>
                                         </div>
                                     </Head>

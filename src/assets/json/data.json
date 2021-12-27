@@ -3,16 +3,23 @@
         {"id":"1",
             "title": "EdityMe", 
             "subtitle":"Editor de Imagens", 
-            "description":"O EdityMe é um editor de imagens com funcionalidades básicas de edição de imagem como: mover, cortar, redimensionar e organizar em camadas. Acompanhe a seguir.", 
+            "description":"O EdityMe é um editor de imagens com funcionalidades básicas de edição de imagem como: mover, cortar, redimensionar e organizar em camadas. Acompanhe o projeto a seguir.", 
             "principalImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/edityme/edityme.png", 
-            "secondaryImg": "https://github.com/myjefferson/edity-me/raw/master/assets/screens/preview.gif", 
+            "secondaryImg": "", 
             "data": "Nov/2021",
             "designer": "Jefferson Carvalho",
             "linkSite": "https://myjefferson.github.io/edity-me/",
             "btnStatus": "btnOn",
             "github": "https://github.com/myjefferson/edity-me", 
             "techs": "HTML - CSS - JavaScript | jQuery - Bootstrap - HTML2Canvas - CropperJS",
-            "Topics": [{}]
+            "Topics": [
+                {
+                    "layout": "principal",
+                    "title": "Prévia",
+                    "text": "Aqui será apresentado uma demostração do uso das funcionalidades do editor.",
+                    "img": "https://github.com/myjefferson/edity-me/raw/master/assets/screens/preview.gif"
+                }
+            ]
         },
 
 
