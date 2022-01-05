@@ -25,7 +25,7 @@
 
         {"id":"2",
             "title": "Home Cloud", 
-            "subtitle": "Sua 'núvem' em casa...", 
+            "subtitle": "A sua 'núvem' em casa", 
             "description":"Home Cloud é um sistema web voltado para pessoas que desejam fazer um armazenamento de arquivos como uma 'núvem' em casa.", 
             "principalImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/home-cloud/home-cloud.png", 
             "secondaryImg": "https://github.com/myjefferson/home-cloud/raw/master/frontend/src/assets/screens/screen-1.png", 
@@ -116,8 +116,8 @@
 
         {"id":"6",
             "title": "MEDIFARMA", 
-            "subtitle":"Gerenciamento de Pacientes e Médicos", 
-            "description":"Este projeto foi desenvolvido através do Hackaton de Programação realizado pelo Sistema FIEP por meio do SENAI (unidade Portão - Curitiba - PR). O objetivo principal da construção do programa foi em provar os participantes sobre os conhecimentos na linguagem de programação C#.", 
+            "subtitle":"Sistema de Gestão Hospitalar", 
+            "description":"Este projeto foi desenvolvido através do Hackaton de Programação realizado pelo Sistema FIEP por meio do SENAI (unidade Portão - Curitiba - PR). O objetivo principal da construção de um sistema de gestão hospitalar, foi em provar os participantes sobre os conhecimentos na linguagem de programação C#.", 
             "principalImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/medifarma/medifarma.png", 
             "secondaryImg": "https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/projects/medifarma/change_account.png", 
             "data": "Set/2019",
