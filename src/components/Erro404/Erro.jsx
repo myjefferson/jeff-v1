@@ -1,10 +1,12 @@
 import React from 'react'
 import {StyleError} from './style/erro'
 import arrow from '../../assets/img/arrow.svg'
+import MenuErro from './MenuErro'
 
 export default function Erro(){
     return(
         <>
+            <MenuErro/>
             <StyleError>
                 <div>
                     <h1>404</h1>

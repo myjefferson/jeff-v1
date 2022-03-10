@@ -1,6 +1,6 @@
 {
     "Projects":[
-        {"id":"1",
+        {"id":1,
             "title": "EdityMe", 
             "subtitle":"Editor de Imagens", 
             "description":"O EdityMe é um editor de imagens com funcionalidades básicas de edição de imagem como: mover, cortar, redimensionar e organizar em camadas. Acompanhe o projeto a seguir.", 
@@ -23,7 +23,7 @@
         },
 
 
-        {"id":"2",
+        {"id":2,
             "title": "Home Cloud", 
             "subtitle": "A sua 'núvem' em casa", 
             "description":"Home Cloud é um sistema web voltado para pessoas que desejam fazer um armazenamento de arquivos como uma 'núvem' em casa.", 
@@ -46,7 +46,7 @@
         },
 
 
-        {"id":"3",
+        {"id":3,
             "title": "CONEC.T", 
             "subtitle":"A Rede Social de Tecnologia", 
             "description":"O Projeto tem o objetivo de reunir programadores e clientes que querem públicar assuntos e ideias de seus interesses, através de uma rede social.", 
@@ -75,7 +75,7 @@
         },
 
 
-        {"id":"4",
+        {"id":4,
             "title": "NETFLIX", 
             "subtitle":"Um layout alternativo", 
             "description":"Este projeto foi desenvolvido para fins de estudos em programação, design UX e UI. O sistema tem como funcionalidade um conceito simples de um sistema alternativo da Netflix, Web e Mobile.", 
@@ -98,7 +98,7 @@
         },
 
 
-        {"id":"5",
+        {"id":5,
             "title": "Editor NETFLIX", 
             "subtitle":"Cadastre Filmes e Séries", 
             "description":"Sistema que cadastra séries e filmes, armazenando as informações salvas no banco de dados.", 
@@ -114,7 +114,7 @@
         },
             
 
-        {"id":"6",
+        {"id":6,
             "title": "MEDIFARMA", 
             "subtitle":"Sistema de Gestão Hospitalar", 
             "description":"Este projeto foi desenvolvido através do Hackaton de Programação realizado pelo Sistema FIEP por meio do SENAI (unidade Portão - Curitiba - PR). O objetivo principal da construção de um sistema de gestão hospitalar, foi em provar os participantes sobre os conhecimentos na linguagem de programação C#.", 

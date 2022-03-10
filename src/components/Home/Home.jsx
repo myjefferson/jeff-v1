@@ -48,9 +48,9 @@ export default function Home(){
                                         <li><div id="box-resume"><a id="resume" href={resume} target="_blank" rel="noreferrer"><div id="border"></div>Ver resumo</a></div></li>
                                     </ul>
                                 </Fade>
-                                <div class="scroll-icon">
-                                    <div class="mouse" title="Utilize o Scroll do mouse para me conhecer mais!">
-                                        <div class="pointer-mouse"></div>
+                                <div className="scroll-icon">
+                                    <div className="mouse" title="Utilize o Scroll do mouse para me conhecer mais!">
+                                        <div className="pointer-mouse"></div>
                                     </div>
                                 </div>
                             </div>
@@ -69,7 +69,7 @@ export default function Home(){
                             <p id="p-here-skills">Aqui estão <i>algumas</i> das minhas habilidades:</p>
                         </Fade>
                         <Fade bottom>
-                            <ul class="skills">
+                            <ul className="skills">
                                 {skills.Skills.map((data, key) => {
                                     return(
                                         <>
