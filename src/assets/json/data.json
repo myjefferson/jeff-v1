@@ -55,7 +55,7 @@
             "data": "Jul/2019",
             "designer": "Jefferson Carvalho",
             "linkSite": "http://conect.infinityfreeapp.com/index.php",
-            "btnStatus": "btnOn",
+            "btnStatus": "btnOff",
             "github": "https://github.com/myjefferson/CONEC.T-RedeSocial", 
             "techs": "HTML - CSS - JavaScript - PHP - MySQL | Bootstrap - Materialize - PHPMailer",
             "Topics": [
