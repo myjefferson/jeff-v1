@@ -64,7 +64,7 @@ export default function Home(){
                             <h1 className={styleHome.title}>Sobre Mim</h1>
                             
                             <p>Olá, muito prazer! Me chamo Jefferson, e uso minhas ideias e criatividade para desenvolver projetos para web. Comecei a estudar programação em 2014 criando projetos pessoais usando o HTML, CSS e JavaScript.</p>
-                            <p>Atualmente estou cursando Análise e Desenvolvimento de Sistemas na Faculdade Anchieta de Ensino Superior do Paraná, na cidade de Curitiba/PR. Meu objetivo é ampliar o conhecimento em habilidades técnicas e gerenciais, sempre buscando a melhor forma de moldar minha vocação para entregar um excelente trabalho.</p>
+                            <p>Atualmente, estou terminando o curso Análise e Desenvolvimento de Sistemas na Faculdade UniEnsino, na cidade de Curitiba/PR. Meu objetivo é ampliar o conhecimento em habilidades técnicas e gerenciais, sempre buscando a melhor forma de moldar minha vocação para entregar um excelente trabalho.</p>
                             
                             <p id="p-here-skills">Aqui estão <i>algumas</i> das minhas habilidades:</p>
                         </Fade>
@@ -118,8 +118,8 @@ export default function Home(){
                     <Fade bottom>
                         <h1 className={styleHome.title}>Entre em Contato</h1>
                         <p>
-                            {/*Estou a procura de uma oportunidade para trabalhar como desenvolvedor front-end. Estarei a disposição para responder.*/}
-                            {"No momento, estou trabalhando como desenvolvedor PHP na empresa "} <a href="https://www.iesde.com.br/" target="_blank" rel="noreferrer" style={{color: "#ddd", textDecoration: "none"}}><b>IESDE - INTELIGÊNCIA EDUCACIONAL E SISTEMAS DE ENSINO.</b></a> {"Mas se precisar fazer alguma pergunta, estarei a disposição para responder você."}
+                            Estou a procura de uma oportunidade para trabalhar como desenvolvedor PHP. Estarei a disposição para responder.
+                            {/* {"No momento, estou trabalhando como desenvolvedor PHP na empresa "} <a href="https://www.iesde.com.br/" target="_blank" rel="noreferrer" style={{color: "#ddd", textDecoration: "none"}}><b>IESDE - INTELIGÊNCIA EDUCACIONAL E SISTEMAS DE ENSINO.</b></a> {"Mas se precisar fazer alguma pergunta, estarei a disposição para responder você."} */}
                         </p>
                         <div id="box-more">
                             <a id="email" href="mailto:jcsjeffrey@gmail.com"><div id="border"></div>Dizer Olá</a>
