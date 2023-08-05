@@ -118,8 +118,8 @@ export default function Home(){
                     <Fade bottom>
                         <h1 className={styleHome.title}>Entre em Contato</h1>
                         <p>
-                            Estou a procura de uma oportunidade para trabalhar como desenvolvedor PHP. Estarei a disposição para responder.
-                            {/*"No momento, estou trabalhando como desenvolvedor PHP na empresa "} <a href="https://www.iesde.com.br/" target="_blank" rel="noreferrer" style={{color: "#ddd", textDecoration: "none"}}><b>IESDE - INTELIGÊNCIA EDUCACIONAL E SISTEMAS DE ENSINO.</b></a> {"Mas se precisar fazer alguma pergunta, estarei a disposição para responder você."*/}
+                            {/* Estou a procura de uma oportunidade para trabalhar como desenvolvedor PHP. Estarei a disposição para responder. */}
+                            No momento, estou trabalhando como Analista de Desenvolvimento na empresa <a href="https://autoconf.com.br/" target="_blank" rel="noreferrer" style={{color: "#ddd", textDecoration: "none"}}><b>AUTOCONF</b></a>. Mas se precisar fazer alguma pergunta, estarei a disposição para responder você.
                         </p>
                         <div id="box-more">
                             <a id="email" href="mailto:jcsjeffrey@gmail.com"><div id="border"></div>Dizer Olá</a>
