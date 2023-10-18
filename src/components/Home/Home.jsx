@@ -39,7 +39,7 @@ export default function Home(){
                                     <h1 id="name">Jefferson Carvalho.</h1>
                                 </Fade>
                                 <Fade bottom delay={850} duration={700}>
-                                    <p id="profes"><i>Futuro</i> <b>Analista e Desenvolvedor de Sistemas.</b></p>
+                                    <p id="profes"><b>Analista e Desenvolvedor de Sistemas.</b></p>
                                 </Fade>
                                 <Fade bottom delay={1050} duration={700}>
                                     <ul>
@@ -64,7 +64,7 @@ export default function Home(){
                             <h1 className={styleHome.title}>Sobre Mim</h1>
                             
                             <p>Olá, muito prazer! Me chamo Jefferson, e uso minhas ideias e criatividade para desenvolver projetos para web. Comecei a estudar programação em 2014 criando projetos pessoais usando o HTML, CSS e JavaScript.</p>
-                            <p>Atualmente, estou terminando o curso Análise e Desenvolvimento de Sistemas na Faculdade UniEnsino, na cidade de Curitiba/PR. Meu objetivo é ampliar o conhecimento em habilidades técnicas e gerenciais, sempre buscando a melhor forma de moldar minha vocação para entregar um excelente trabalho.</p>
+                            <p>Sou formado em Análise e Desenvolvimento de Sistemas na Faculdade UniEnsino, na cidade de Curitiba/PR. Meu objetivo é ampliar o conhecimento em habilidades técnicas e gerenciais, sempre buscando a melhor forma de moldar minha vocação para entregar um excelente trabalho.</p>
                             
                             <p id="p-here-skills">Aqui estão <i>algumas</i> das minhas habilidades:</p>
                         </Fade>
