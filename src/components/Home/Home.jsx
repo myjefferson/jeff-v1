@@ -36,7 +36,7 @@ export default function Home(){
                                     <p id="salut">Olá, meu nome é</p>
                                 </Fade>
                                 <Fade bottom delay={650} duration={700}>
-                                    <h1 id="name">Jefferson Carvalho.</h1>
+                                    <h1 id="name">Jefferson Carvalho</h1>
                                 </Fade>
                                 <Fade bottom delay={850} duration={700}>
                                     <p id="profes"><b>Analista e Desenvolvedor de Sistemas.</b></p>
@@ -92,9 +92,9 @@ export default function Home(){
                             Aqui serão apresentados meus projetos desenvolvidos recentemente. Fique à vontade!
                         </p>
                         <div id="projects">
-                            {projects.Projects.map((data) => {
+                            {projects.Projects.map((data, key) => {
                                 return(
-                                    <div id="project" key={data.id}>
+                                    <div id="project" key={key}>
                                         <a href={`/Project/${data.id}`}>
                                             <img src={data.principalImg} alt={data.title}/>
                                             {/*<div class="options-open-project">
@@ -118,8 +118,8 @@ export default function Home(){
                     <Fade bottom>
                         <h1 className={styleHome.title}>Entre em Contato</h1>
                         <p>
-                            {/* Estou a procura de uma oportunidade para trabalhar como desenvolvedor PHP. Estarei a disposição para responder. */}
-                            No momento, estou trabalhando como Analista de Desenvolvimento na empresa <a href="https://autoconf.com.br/" target="_blank" rel="noreferrer" style={{color: "#ddd", textDecoration: "none"}}><b>AUTOCONF</b></a>. Mas se precisar fazer alguma pergunta, estarei a disposição para responder você.
+                            Estou a procura de uma oportunidade para trabalhar como desenvolvedor PHP. Estarei a disposição para responder.
+                            {/* No momento, estou trabalhando como Analista de Desenvolvimento na empresa <a href="https://autoconf.com.br/" target="_blank" rel="noreferrer" style={{color: "#ddd", textDecoration: "none"}}><b>AUTOCONF</b></a>. Mas se precisar fazer alguma pergunta, estarei a disposição para responder você. */}
                         </p>
                         <div id="box-more">
                             <a id="email" href="mailto:jcsjeffrey@gmail.com"><div id="border"></div>Dizer Olá</a>
