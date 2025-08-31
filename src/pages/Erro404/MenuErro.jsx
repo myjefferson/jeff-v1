@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import logo from '../../assets/img/logo-jefferson-carvalho.svg'
-import {Container} from '@material-ui/core'
 import {StyleMenuErro} from './style/menuerro'
 
 export default function NavBar(){  
@@ -46,7 +45,7 @@ export default function NavBar(){
         <>
             <StyleMenuErro>
                 <div id="navbar">
-                    <Container id="container">
+                    <div className='max-w-screen-xl flex flex-wrap items-center mx-auto pt-8 pb-8' id="container">
                         <img id="logo" alt="J" src={logo}/>
                         <button id="btn_menu"><img id="icon_menu" src="https://raw.githubusercontent.com/myjefferson/jefferson-carvalho/master/src/assets/img/menu.svg" alt="Menu"/></button>
                         <div id="group-menu">
@@ -60,7 +59,7 @@ export default function NavBar(){
                             </div>
                             <div id="menu-blur"></div>
                         </div>
-                    </Container>
+                    </div>
                 </div>
             </StyleMenuErro>  
         </>

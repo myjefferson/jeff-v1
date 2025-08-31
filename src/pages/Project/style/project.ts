@@ -5,21 +5,18 @@ export const Head = styled.div`
     margin-top: 120px;
     
     #head h1{
-        font-family: "Gotham";
         font-size: 54px;
         margin-bottom: 60px;
         color: #BF98FF;
     }
 
     #head h4{
-        font-family: "GothamRounded";
         font-weight: 600;
         margin-bottom: 6px;
         font-size: 14px;
     }
     
     #head h3, .principal h3, #info_itens h1{
-        font-family: "GothamRounded";
         font-weight: 100;
         line-height: 38px;
         text-align: justify;
@@ -154,11 +151,9 @@ export const Head = styled.div`
 
 export const Body = styled.div`
     color: #FFF;
-    font-family: "GothamRounded";
     font-weight: 78;
 
     h1{
-        font-family: "GothamRounded";
         font-size: 35px;
         letter-spacing: 1px;
         border-top: 1px solid #3C507C;
