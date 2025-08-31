@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 import logo from '../../assets/img/logo-jefferson-carvalho.svg'
 import arrow from '../../assets/img/arrow.svg'
 import {NavStyle} from './style/nav'
-import Button from '../../components/Button/button'
+import Button from '../../components/Button/Button'
 
 export default function NavBar(){   
 
