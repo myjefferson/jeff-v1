@@ -9,7 +9,7 @@ import resume from '../../assets/doc/JeffersonCarvalho.pdf'
 
 import Menu from '../../components/Menu/Menu'
 import Footer from '../../components/Footer/Footer'
-import Button from '../../components/Button/button'
+import Button from '../../components/Button/Button'
 import MainLayout from '../../layout/MainLayout'
 import { apiProfile, apiProjects } from '../../assets/api/api'
 
