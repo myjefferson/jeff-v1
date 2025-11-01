@@ -1,17 +1,15 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://www.handgeev.com/api',
+  baseURL: 'https://handgeev.com/api',
   withCredentials: false, // ✅ Isso você pode configurar
   headers: {
     'Content-Type': 'application/json',
-    'Access-Control-Allow-Origin': '*'
+    // 'Access-Control-Allow-Origin': '*' ❌ ISSO NÃO FUNCIONA!
   }
 });
 
 const primaryHash = import.meta.env.VITE_WORKSPACE_HASH_API;
-console.log(primaryHash)
-
 api.defaults.headers.common['Authorization'] = `Bearer ${primaryHash}`;
 api.defaults.headers.common['Content-Type'] = 'application/json';
 
