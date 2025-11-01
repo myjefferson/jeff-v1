@@ -8,7 +8,7 @@ export default defineConfig({
       '/api': {
         target: 'https://www.handgeev.com',
         changeOrigin: true,
-        secure: false,
+        secure: true,
       }
     }
   }
