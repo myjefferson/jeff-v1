@@ -1,5 +1,13 @@
 import axios from 'axios';
 
+fetch('https://www.handgeev.com/api/topics/3/fields', {
+  method: 'GET',
+  headers: {
+    'Authorization': 'Bearer SEU_TOKEN_AQUI',
+    'Content-Type': 'application/json'
+  }
+}).then(r => r.json()).then(console.log).catch(console.error);
+
 const api = axios.create({
   baseURL: 'https://handgeev.com/api',
   withCredentials: false, // ✅ Isso você pode configurar
