@@ -3,7 +3,7 @@ import axios from 'axios';
 const api = axios.create({
   baseURL: 'https://www.handgeev.com',
 });
-app.use(cors({
+api.use(cors({
     origin: 'https://www.handgeev.com',
     methods: ['GET'],
     allowedHeaders: ['Content-Type', 'Authorization']
