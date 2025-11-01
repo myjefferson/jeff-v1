@@ -1,9 +1,10 @@
 import axios from 'axios';
 
+const primaryHash = import.meta.env.VITE_WORKSPACE_HASH_API;
 fetch('https://www.handgeev.com/api/topics/3/fields', {
   method: 'GET',
   headers: {
-    'Authorization': 'Bearer SEU_TOKEN_AQUI',
+    'Authorization': `Bearer ${primaryHash}`,
     'Content-Type': 'application/json'
   }
 }).then(r => r.json()).then(console.log).catch(console.error);
@@ -17,7 +18,6 @@ const api = axios.create({
   }
 });
 
-const primaryHash = import.meta.env.VITE_WORKSPACE_HASH_API;
 api.defaults.headers.common['Authorization'] = `Bearer ${primaryHash}`;
 api.defaults.headers.common['Content-Type'] = 'application/json';
 
