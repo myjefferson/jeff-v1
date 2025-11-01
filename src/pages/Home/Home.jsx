@@ -68,7 +68,6 @@ export default function Home(){
                             <div className='text-center md:text-left order-2 md:order-1 mt-5'>
                                 <div className="space-y-4">
                                     <p id="salut" className="text-white text-2xl md:text-4xl">Olá, meu nome é</p>
-                                    {console.log(profile)}
                                     <h1 id="name" className='text-4xl md:text-6xl text-purple-400 font-bold'>{profile.name} {profile.surname}</h1>
                                 
                                     <p id="profes" className="text-white text-xl md:text-3xl">Analista e Desenvolvedor de Sistemas.</p>
@@ -129,7 +128,6 @@ export default function Home(){
                     <div id="projects" className='grid grid-cols-1 md:grid-cols-2'>
                         {projects.map((project, key) => {
                             const projectData = JSON.parse(project)
-                            console.log(project)
                             return(
                                 <a href={`/project/${projectData.id}`} key={key} id="project" className='mx-5 my-8'>
                                     <img src={projectData.principalImg} alt={projectData.title} className='w-full rounded-lg'/>
