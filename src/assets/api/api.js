@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://www.handgeev.com',
-  withCredentials: false,
+  baseURL: import.meta.env.DEV ? '' : 'https://www.handgeev.com',
 });
 
 const primaryHash = import.meta.env.VITE_WORKSPACE_HASH_API;
