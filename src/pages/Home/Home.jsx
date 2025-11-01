@@ -1,6 +1,5 @@
 // import {Initial, About, Projects} from './style/home'
 import { useEffect, useState } from 'react'
-import skills from '../../assets/json/skills.json'
 
 import avatar from '../../assets/img/avatar.png'
 import linkedin from '../../assets/img/linkedin.svg'
@@ -11,45 +10,48 @@ import Menu from '../../components/Menu/Menu'
 import Footer from '../../components/Footer/Footer'
 import Button from '../../components/Button/Button'
 import MainLayout from '../../layout/MainLayout'
-import { apiProfile, apiProjects } from '../../assets/api/api'
+import { apiTopicProject, apiTopicProfile, apiTopicSkill } from '../../assets/api/api'
 
 export default function Home(){
-    const [userProfile, setUserProfile] = useState(null); // Para armazenar os dados do perfil
-    const [projects, setProjects] = useState(null); // Para armazenar os dados dos projetos
-    const [isLoading, setIsLoading] = useState(true);   // Para indicar se está carregando
+    const [profile, setProfile] = useState([]);
+    const [skills, setSkills] = useState([]);
+    const [projects, setProjects] = useState([]);
     const [error, setError] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        const loadProfile = async () => {
+        const loadData = async () => {
             try {
-                setIsLoading(true);
-                setError(null);
+                const dataProjects = await apiTopicProject();
+                const dataProfile = await apiTopicProfile();
+                const dataSkills = await apiTopicSkill();
 
-                await apiProfile().then(res => setUserProfile(res.data));
-                await apiProjects().then(res => setProjects(res.data));
+                setProfile(Object(dataProfile?.data.fields || []));
+                setSkills(Object.values(dataSkills?.data.fields || []));
+                setProjects(Object.values(dataProjects?.data.fields || []));
+
             } catch (err) {
-                console.error("Erro ao carregar perfil:", err);
-                setError("Não foi possível carregar os dados do perfil.");
+                console.error("Erro ao carregar dados:", err);
+                setError("Não foi possível carregar os dados.");
             } finally {
                 setIsLoading(false);
             }
-        }
-        loadProfile();
-    },[])
+        };
+
+        loadData();
+    }, []);
 
     if (isLoading) {
-        return (
-            <MainLayout> {/* Se você tiver um layout, pode envolvê-lo aqui */}
-                <div className="flex justify-center items-center h-screen text-white text-2xl">
-                    Carregando...
-                </div>
-            </MainLayout>
-        );
+        return <div className="flex justify-center items-center h-screen text-white text-2xl">Carregando...</div>;
+    }
+
+    if (error) {
+        return <div className="flex justify-center items-center h-screen text-white text-2xl">{error}</div>;
     }
 
     return (
         <>
-            <MainLayout className={``} id="home" >             
+            <MainLayout>             
                 <div>
                     <Menu/>
                 
@@ -66,8 +68,8 @@ export default function Home(){
                             <div className='text-center md:text-left order-2 md:order-1 mt-5'>
                                 <div className="space-y-4">
                                     <p id="salut" className="text-white text-2xl md:text-4xl">Olá, meu nome é</p>
-                                
-                                    <h1 id="name" className='text-4xl md:text-6xl text-purple-400 font-bold'>{userProfile.name} {userProfile.surname}</h1>
+                                    {console.log(profile)}
+                                    <h1 id="name" className='text-4xl md:text-6xl text-purple-400 font-bold'>{profile.name} {profile.surname}</h1>
                                 
                                     <p id="profes" className="text-white text-xl md:text-3xl">Analista e Desenvolvedor de Sistemas.</p>
                                 </div>
@@ -100,21 +102,24 @@ export default function Home(){
                     
                     <div className='text-white text-xl'>
                         <p className='mb-5'>
-                            {userProfile.about_me}
+                            {profile.about_me}
                         </p>
                         <p id="p-here-skills text-center w-full">Aqui estão <i>algumas</i> das minhas habilidades:</p>
                     </div>
                     <ul className="skills w-full grid grid-cols-4 lg:grid-cols-8 text-center">
-                        {skills.Skills.map((data, key) => {
+                        {skills.map((field, key) => {
+                            const fieldData = JSON.parse(field);
+                            
                             return(
                                 <>
                                     <li key={key} className='space-y-2 mb-10'>
-                                        <p className='flex justify-center w-full'><img src={data.img} alt="" title={data.title} className="h-10"/></p>
-                                        <p className="text-[11px] text-white w-max-content">{data.name}</p>
+                                        <p className='flex justify-center w-full'><img src={fieldData.img} alt="" title={fieldData.title} className="h-10"/></p>
+                                        <p className="text-[11px] text-white w-max-content">{fieldData.name}</p>
                                     </li>
                                 </>
                             )
                         })}
+
                     </ul>
                 </section>
 
@@ -122,12 +127,14 @@ export default function Home(){
                     <h1 className="text-center text-3xl text-purple-400 font-bold mb-8">Projetos Pessoais</h1>
                     <p id="subtitle" className='text-center'>Aqui serão apresentados meus projetos desenvolvidos recentemente. Fique à vontade!</p>
                     <div id="projects" className='grid grid-cols-1 md:grid-cols-2'>
-                        {projects.map((data, key) => {
+                        {projects.map((project, key) => {
+                            const projectData = JSON.parse(project)
+                            console.log(project)
                             return(
-                                <a href={`/project/${data.id}`} key={key} id="project" className='mx-5 my-8'>
-                                    <img src={data.cover} alt={data.title} className='w-full rounded-lg'/>
-                                    <h1 className='text-center mt-5 text-purple-400 font-bold text-lg'>{data.title}</h1>
-                                    <p className='text-center'>{data.subtitle}</p>
+                                <a href={`/project/${projectData.id}`} key={key} id="project" className='mx-5 my-8'>
+                                    <img src={projectData.principalImg} alt={projectData.title} className='w-full rounded-lg'/>
+                                    <h1 className='text-center mt-5 text-purple-400 font-bold text-lg'>{projectData.title}</h1>
+                                    <p className='text-center'>{projectData.subtitle}</p>
                                 </a>
                             )         
                         })}

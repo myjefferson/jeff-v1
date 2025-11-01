@@ -4,7 +4,7 @@ import github from '../../assets/img/github.svg'
 import {useParams} from 'react-router-dom'
 import NavBar from './NavBar'
 import Footer from '../../components/Footer/Footer'
-import { apiProjectById } from '../../assets/api/api'
+import { apiTopicProject } from '../../assets/api/api'
 import MainLayout from '../../layout/MainLayout'
 
 export default function Project(){    
@@ -22,7 +22,7 @@ export default function Project(){
                 setIsLoading(true);
                 setError(null);
 
-                await apiProjectById(projectId).then(res => setProject(res.data));
+                await apiTopicProject(projectId).then(res => setProject(res.data));
             } catch (err) {
                 console.error("Erro ao carregar perfil:", err);
                 setError("Não foi possível carregar os dados do perfil.");

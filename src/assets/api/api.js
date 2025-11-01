@@ -1,24 +1,11 @@
-import axios from  'axios'
+import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://portfoline.infinityfreeapp.com'
-})
+  baseURL: 'https://www.handgeev.com',
+});
+const primaryHash = import.meta.env.VITE_WORKSPACE_HASH_API;
+api.defaults.headers.common['Authorization'] = `Bearer ${primaryHash}`;
 
-const accessApi = {
-    'primary_hash_api': import.meta.env.VITE_PRIMARY_HASH_API,
-    'secondary_hash_api': import.meta.env.VITE_SECONDARY_HASH_API
-}
-
-
-export const apiProfile = () => { 
-    return api.post('/api/profile', accessApi)
-}
-
-export const apiProjects = () => { 
-    return api.post('/api/projects', accessApi)
-}
-
-export const apiProjectById = (idProject) => { 
-    accessApi.idProject = idProject;
-    return api.post('/api/projectbyid', accessApi)
-}
+export const apiTopicProject = () => api.get('/api/topics/3/fields');
+export const apiTopicSkill = () => api.get('/api/topics/7/fields');
+export const apiTopicProfile = () => api.get('/api/topics/8/fields');
