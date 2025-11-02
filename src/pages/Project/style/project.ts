@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const Head = styled.div`
     color: #FFF;
-    margin-top: 120px;
     
     #head h1{
         font-size: 54px;
@@ -125,7 +124,7 @@ export const Head = styled.div`
     }
 
     @media only screen and (max-width: 850px) {
-        margin-top: 140px;
+        margin-top: 100px;
 
         #head h1{
             margin: 0 0 30px 0;

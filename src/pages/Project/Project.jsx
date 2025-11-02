@@ -9,7 +9,7 @@ import MainLayout from '../../layout/MainLayout'
 
 export default function Project(){    
     const [isLoading, setIsLoading] = useState(true);   // Para indicar se está carregando
-    const [project, setProject] = useState(null); // Para armazenar os dados dos projetos
+    const [project, setProject] = useState([]); // Para armazenar os dados dos projetos
     const [error, setError] = useState(null);
 
     const {id} = useParams()
@@ -22,7 +22,12 @@ export default function Project(){
                 setIsLoading(true);
                 setError(null);
 
-                await apiTopicProject(projectId).then(res => setProject(res.data));
+                const apiProjects = await apiTopicProject();
+                const fields = Object.values(apiProjects?.data.fields || []);
+                const dataProject = fields?.map(field => JSON.parse(field))
+                .find(project => project.id == projectId)
+                console.log(dataProject)
+                setProject(dataProject || [])
             } catch (err) {
                 console.error("Erro ao carregar perfil:", err);
                 setError("Não foi possível carregar os dados do perfil.");
@@ -45,14 +50,14 @@ export default function Project(){
 
     return(
         <>
-            <NavBar/>
 
             <MainLayout>
-                <div className='container max-w-screen-xl flex mx-auto pb-8 -mt-16'>
+                <div className='container max-w-screen-xl mx-auto py-8 px-4'>
+                    <NavBar/>
                     <Head>
                         <div id="head">
                             <h1 className='font-bold'>{project.title}</h1>
-                            <h3 className='mb-10'>{project.description}</h3>
+                            <h3 className='mb-14'>{project.description}</h3>
                             <div id="info_project">
                                 <div id="info_itens">
                                     <div id="data">
@@ -86,9 +91,9 @@ export default function Project(){
 
 
                             <div id="secondaryImg">
-                                {JSON.parse(project.images).map((image, key) => {
-                                        return key > 0 && <img src={image} alt="" key={key}/>
-                                })}
+                                
+                                        <img src={project.secondaryImg} alt=""/>
+                                
                                 {/* {project.images.map === ""
                                     ? <p style={{
                                         marginTop: "30px", 
@@ -102,23 +107,23 @@ export default function Project(){
                     </Head>
                     <Body>
                         {
-                            // project.Topics.map((topic, key) => {
-                            //     return(
-                            //         <>
-                            //             <div key={key} className={topic.layout}>
-                            //                 <h1>{topic.title}</h1>
-                            //                 <h3>{topic.text}</h3>
-                            //                 <div id="topicImg">
-                            //                     {
-                            //                         topic.img === "" 
-                            //                         ? <p></p>
-                            //                         : <img src={topic.img} alt={topic.title}/>
-                            //                     }
-                            //                 </div>
-                            //             </div>  
-                            //         </>
-                            //     )
-                            // })
+                            project.Topics.map((topic, key) => {
+                                return(
+                                    <>
+                                        <div key={key} className={topic.layout}>
+                                            <h1>{topic.title}</h1>
+                                            <h3>{topic.text}</h3>
+                                            <div id="topicImg">
+                                                {
+                                                    topic.img === "" 
+                                                    ? <p></p>
+                                                    : <img src={topic.img} alt={topic.title}/>
+                                                }
+                                            </div>
+                                        </div>  
+                                    </>
+                                )
+                            })
                         }
                     </Body>
                 </div>

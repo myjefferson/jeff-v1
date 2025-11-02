@@ -67,8 +67,8 @@ export default function Home(){
                         <div id="pres-principal" className='container mx-auto p-8 pt-36 pb-14 grid grid-cols-1 md:grid-cols-[60%_40%]  h-full items-center justify-between'>
                             <div className='text-center md:text-left order-2 md:order-1 mt-5'>
                                 <div className="space-y-4">
-                                    <p id="salut" className="text-white text-2xl md:text-4xl">Olá, meu nome é</p>
-                                    <h1 id="name" className='text-4xl md:text-6xl text-purple-400 font-bold'>{profile.name} {profile.surname}</h1>
+                                    <p id="salut" className="text-white text-3xl md:text-4xl">Olá, meu nome é</p>
+                                    <h1 id="name" className='text-3xl md:text-6xl text-purple-400 font-bold'>{profile.name} {profile.surname}</h1>
                                 
                                     <p id="profes" className="text-white text-xl md:text-3xl">Analista e Desenvolvedor de Sistemas.</p>
                                 </div>
@@ -124,7 +124,7 @@ export default function Home(){
 
                 <section id="all-projects" className='container mx-auto items-center px-4 py-20 space-y-8 text-white'>
                     <h1 className="text-center text-3xl text-purple-400 font-bold mb-8">Projetos Pessoais</h1>
-                    <p id="subtitle" className='text-center'>Aqui serão apresentados meus projetos desenvolvidos recentemente. Fique à vontade!</p>
+                    <p id="subtitle" className='text-center text-2xl'>Aqui serão apresentados meus projetos desenvolvidos recentemente. Fique à vontade!</p>
                     <div id="projects" className='grid grid-cols-1 md:grid-cols-2'>
                         {projects.map((project, key) => {
                             const projectData = JSON.parse(project)
@@ -141,10 +141,12 @@ export default function Home(){
                   
                 <section className="py-20 px-8">
                     <div className='text-center text-3xl text-purple-400 font-bold mb-8'>Entre em Contato</div>
-                    <p className='text-center text-white text-2xl'>
-                        Estou a procura de uma oportunidade para trabalhar como desenvolvedor front-end. Estarei a disposição para responder.
-                        {/* No momento, estou trabalhando como Analista de Desenvolvimento na empresa <a href="https://autoconf.com.br/" target="_blank" rel="noreferrer" style={{color: "#ddd", textDecoration: "none"}}><b>AUTOCONF</b></a>. Mas se precisar fazer alguma pergunta, estarei a disposição para responder você. */}
-                    </p>
+                        <div className='flex justify-center w-full'>
+                            <p className='text-white text-center text-2xl max-w-3xl'>
+                                {profile.message_contact}
+                                {/* No momento, estou trabalhando como Analista de Desenvolvimento na empresa <a href="https://autoconf.com.br/" target="_blank" rel="noreferrer" style={{color: "#ddd", textDecoration: "none"}}><b>AUTOCONF</b></a>. Mas se precisar fazer alguma pergunta, estarei a disposição para responder você. */}
+                            </p>
+                        </div>
                     <div className='flex justify-center mt-10'>
                         <div id="box-more">
                             <Button title="Dizer Olá" href="mailto:jcsjeffrey@gmail.com"/>
