@@ -2,7 +2,11 @@ import axios from 'axios';
 
 const WORKSPACE_HASH = import.meta.env.VITE_WORKSPACE_HASH_API;
 const api = axios.create({
+<<<<<<< HEAD
   baseURL: 'https://www.handgeev.com/api/v1',
+=======
+  baseURL: 'https://www.handgeev.com/api',
+>>>>>>> 097d1b16042a7a85495ec4d5a937f4692e3c1896
   withCredentials: false,
   headers: {
     'Content-Type': 'application/json',
