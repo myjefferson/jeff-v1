@@ -26,9 +26,13 @@ export default function Home(){
                 const dataProfile = await apiTopicProfile();
                 const dataSkills = await apiTopicSkill();
 
-                setProfile(Object(dataProfile?.data.fields || []));
-                setSkills(Object.values(dataSkills?.data.fields || []));
-                setProjects(Object.values(dataProjects?.data.fields || []));
+                console.log(Object.values(dataProfile?.data.record || []))
+                console.log(dataSkills?.data.topic.records)
+                console.log(dataProjects?.data.topic.records)
+
+                setProfile(Object(dataProfile?.data.record || []));
+                setSkills(Object(dataSkills?.data.topic.records || []));
+                setProjects(Object(dataProjects?.data.topic.records || []));
 
             } catch (err) {
                 console.error("Erro ao carregar dados:", err);
@@ -70,12 +74,12 @@ export default function Home(){
                                     <p id="salut" className="text-white text-3xl md:text-4xl">Olá, meu nome é</p>
                                     <h1 id="name" className='text-3xl md:text-6xl text-purple-400 font-bold'>{profile.name} {profile.surname}</h1>
                                 
-                                    <p id="profes" className="text-white text-xl md:text-3xl">Analista e Desenvolvedor de Sistemas.</p>
+                                    <p id="profes" className="text-white text-xl md:text-3xl">{profile.occupation}</p>
                                 </div>
                                 <div className='mt-16 flex justify-center md:justify-start'>
                                     <ul className="flex space-x-5">
-                                        <li><a href="https://www.linkedin.com/in/jefferson-carvalho" rel="noreferrer" target="_blank" title="Acessar o LinkedIn"><img src={linkedin} alt="LinkedIn" className="h-10 md:h-12"/></a></li>
-                                        <li><a href="https://github.com/myjefferson" rel="noreferrer" target="_blank" title="Acessar o GitHub"><img src={github} alt="GitHub" className="h-10 md:h-12"/></a></li>
+                                        <li><a href={profile.link_linkedin} rel="noreferrer" target="_blank" title="Acessar o LinkedIn"><img src={linkedin} alt="LinkedIn" className="h-10 md:h-12"/></a></li>
+                                        <li><a href={profile.link_github} rel="noreferrer" target="_blank" title="Acessar o GitHub"><img src={github} alt="GitHub" className="h-10 md:h-12"/></a></li>
                                         <li><Button title="Ver resumo" href={resume}/></li>
                                     </ul>
                                 </div>
@@ -106,14 +110,12 @@ export default function Home(){
                         <p id="p-here-skills text-center w-full">Aqui estão <i>algumas</i> das minhas habilidades:</p>
                     </div>
                     <ul className="skills w-full grid grid-cols-4 lg:grid-cols-8 text-center">
-                        {skills.map((field, key) => {
-                            const fieldData = JSON.parse(field);
-                            
+                        {skills.map((skill, key) => {                            
                             return(
                                 <>
                                     <li key={key} className='space-y-2 mb-10'>
-                                        <p className='flex justify-center w-full'><img src={fieldData.img} alt="" title={fieldData.title} className="h-10"/></p>
-                                        <p className="text-[11px] text-white w-max-content">{fieldData.name}</p>
+                                        <p className='flex justify-center w-full'><img src={skill.img} alt="" title={skill.title} className="h-10"/></p>
+                                        <p className="text-[11px] text-white w-max-content">{skill.name}</p>
                                     </li>
                                 </>
                             )
@@ -127,19 +129,18 @@ export default function Home(){
                     <p id="subtitle" className='text-center text-2xl'>Aqui serão apresentados meus projetos desenvolvidos recentemente. Fique à vontade!</p>
                     <div id="projects" className='grid grid-cols-1 md:grid-cols-2'>
                         {projects.map((project, key) => {
-                            const projectData = JSON.parse(project)
                             return(
-                                <a href={`/project/${projectData.id}`} key={key} id="project" className='mx-5 my-8'>
-                                    <img src={projectData.principalImg} alt={projectData.title} className='w-full rounded-lg'/>
-                                    <h1 className='text-center mt-5 text-purple-400 font-bold text-lg'>{projectData.title}</h1>
-                                    <p className='text-center'>{projectData.subtitle}</p>
+                                <a href={`/project/${project.id}`} key={key} id="project" className='mx-5 my-8'>
+                                    <img src={project.principalImg} alt={project.title} className='w-full rounded-lg'/>
+                                    <h1 className='text-center mt-5 text-purple-400 font-bold text-lg'>{project.title}</h1>
+                                    <p className='text-center'>{project.subtitle}</p>
                                 </a>
                             )         
                         })}
                     </div>
                 </section>
                   
-                <section className="py-20 px-8">
+                <section className="py-20 px-8" id="contact">
                     <div className='text-center text-3xl text-purple-400 font-bold mb-8'>Entre em Contato</div>
                         <div className='flex justify-center w-full'>
                             <p className='text-white text-center text-2xl max-w-3xl'>
@@ -154,7 +155,7 @@ export default function Home(){
                     </div>
                 </section>
 
-                <Footer/>
+                <Footer profile={profile}/>
             </MainLayout>
         </>
     )
