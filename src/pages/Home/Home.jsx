@@ -26,10 +26,6 @@ export default function Home(){
                 const dataProfile = await apiTopicProfile();
                 const dataSkills = await apiTopicSkill();
 
-                console.log(Object.values(dataProfile?.data.record || []))
-                console.log(dataSkills?.data.topic.records)
-                console.log(dataProjects?.data.topic.records)
-
                 setProfile(Object(dataProfile?.data.record || []));
                 setSkills(Object(dataSkills?.data.topic.records || []));
                 setProjects(Object(dataProjects?.data.topic.records || []));
